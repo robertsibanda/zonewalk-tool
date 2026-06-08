@@ -342,6 +342,12 @@ if command -v crontab &>/dev/null; then
     }
 fi
 
+# Copy startup prompt
+if [ -f "$REPO_DIR/prompts/opencode-startup.md" ]; then
+    cp "$REPO_DIR/prompts/opencode-startup.md" /usr/local/share/1grid-agent/opencode-startup.md
+    echo -e "  ${OK} Startup prompt copied${NC}"
+fi
+
 # Verify
 echo ""
 echo -e "${GREEN}╔══════════════════════════════════════════════════════════╗${NC}"
@@ -366,9 +372,30 @@ echo -e ""
 echo -e "    zonewalk domain.co.za     # Direct DNS diagnostics"
 echo -e "    warehouse-query search x  # Direct warehouse search"
 echo ""
-echo -e "  ${WHITE}First run:${NC}"
-echo -e "    Just run ${CYAN}1grid-agent${NC} — it will ask for your name and set everything up."
-echo -e "    Your conversations and tickets will be saved to the warehouse automatically."
+echo -e "  ${YELLOW}╔══════════════════════════════════════════════════════════╗${NC}"
+echo -e "  ${YELLOW}║${WHITE}  NEXT STEP: Paste this prompt into opencode${NC}                ${YELLOW}║${NC}"
+echo -e "  ${YELLOW}╚══════════════════════════════════════════════════════════╝${NC}"
+echo ""
+echo -e "  Run the following to get your startup prompt:"
+echo -e "  ${CYAN}cat /usr/local/share/1grid-agent/opencode-startup.md${NC}"
+echo ""
+echo -e "  Edit the prompt file to replace ${WHITE}[YOUR_NAME]${NC} with your name,"
+echo -e "  then paste the entire contents into opencode's first message."
+echo ""
+echo -e "  ${WHITE}Quick start:${NC}"
+echo -e "    nano /usr/local/share/1grid-agent/opencode-startup.md   # set your name"
+echo -e "    1grid-agent                                             # start opencode"
+echo ""
+
+# Show the prompt inline
+if [ -f "/usr/local/share/1grid-agent/opencode-startup.md" ]; then
+    echo -e "  ${CYAN}────────────────────────────────────────────────────${NC}"
+    echo -e "  ${CYAN}STARTUP PROMPT (edit [YOUR_NAME] first)${NC}"
+    echo -e "  ${CYAN}────────────────────────────────────────────────────${NC}"
+    cat /usr/local/share/1grid-agent/opencode-startup.md
+    echo ""
+    echo -e "  ${CYAN}────────────────────────────────────────────────────${NC}"
+fi
 echo ""
 echo -e "  ${CYAN}Portfolio:${NC} https://dev-robert.co.za"
 echo -e "  ${CYAN}Portal:${NC}    https://dev-robert.co.za/portal"
