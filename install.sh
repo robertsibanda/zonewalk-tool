@@ -285,7 +285,7 @@ TEAM_NAME="L1 Support"
 echo -e "  ${INFO}Registering user: ${WHITE}${USER_ID}${NC}"
 
 # Try to register in MongoDB (silent fail if MongoDB unavailable)
-MONGO_URI="${MONGO_URI:-mongodb://localhost:27017}"
+MONGO_URI="${MONGO_URI:-mongodb://support_admin:claire6772147@41.61.20.67:27017/admin}"
 MONGO_DB="${MONGO_DB:-support_ai}"
 if python3 -c "from pymongo import MongoClient; MongoClient('${MONGO_URI}').server_info()" 2>/dev/null; then
     warehouse-query register-user --id "$USER_ID" --name "$CURRENT_USER" --team "$TEAM_NAME" 2>/dev/null || true

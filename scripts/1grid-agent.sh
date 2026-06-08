@@ -3,7 +3,7 @@
 # First run prompts for name, registers in warehouse, then opens opencode
 
 CONFIG_FILE="$HOME/.1grid-agent-user.json"
-MONGO_URI="${MONGO_URI:-mongodb://localhost:27017}"
+MONGO_URI="${MONGO_URI:-mongodb://support_admin:claire6772147@41.61.20.67:27017/admin}"
 MONGO_DB="${MONGO_DB:-support_ai}"
 
 # ── Colors ──

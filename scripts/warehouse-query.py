@@ -16,12 +16,12 @@ import argparse, json, os, sys, re
 from datetime import datetime
 from pymongo import MongoClient, DESCENDING
 
-MONGO_URI = os.environ.get("MONGO_URI", "mongodb://localhost:27017")
+MONGO_URI = os.environ.get("MONGO_URI", "mongodb://support_admin:claire6772147@41.61.20.67:27017/admin")
 MONGO_DB  = os.environ.get("MONGO_DB", "support_ai")
 USER_ID   = os.environ.get("USER_ID", os.environ.get("USER", "unknown"))
 
-# Fallback: try loading from .env if no URI override
-if MONGO_URI == "mongodb://localhost:27017" and os.path.exists("/root/1grid-support-agent/.env"):
+# Fallback: try loading from .env if default unchanged
+if MONGO_URI.startswith("mongodb://support_admin:") and os.path.exists("/root/1grid-support-agent/.env"):
     try:
         with open("/root/1grid-support-agent/.env") as f:
             for line in f:
