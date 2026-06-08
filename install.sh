@@ -224,20 +224,21 @@ if [ -f "/usr/local/share/1grid-agent/instructions.md" ]; then
 fi
 
 # Install opencode config
+INSTRUCTIONS_PATH="${HOME}/.config/opencode/instructions/1grid-agent.md"
 if [ -f "$OPCODE_CONFIG" ]; then
     if grep -q "warehouse-query" "$OPCODE_CONFIG" 2>/dev/null; then
         echo -e "  ${OK} Warehouse tools already configured in opencode"
     else
         cp "$OPCODE_CONFIG" "$OPCODE_CONFIG.bak"
-        cp "/usr/local/share/1grid-agent/opencode-agent.jsonc" "$OPCODE_CONFIG"
+        sed "s|__INSTRUCTIONS_PATH__|${INSTRUCTIONS_PATH}|g" \
+            "/usr/local/share/1grid-agent/opencode-agent.jsonc" > "$OPCODE_CONFIG"
         echo -e "  ${OK} Config updated (backup at ${OPCODE_CONFIG}.bak)"
     fi
 else
-    cp "/usr/local/share/1grid-agent/opencode-agent.jsonc" "$OPCODE_CONFIG"
+    sed "s|__INSTRUCTIONS_PATH__|${INSTRUCTIONS_PATH}|g" \
+        "/usr/local/share/1grid-agent/opencode-agent.jsonc" > "$OPCODE_CONFIG"
     echo -e "  ${OK} Created opencode config with zonewalk + warehouse tools"
 fi
-    cp "/usr/local/share/1grid-agent/opencode-agent.jsonc" "$OPCODE_CONFIG"
-    echo -e "  ${OK} Created opencode config with zonewalk + warehouse tools"
 fi
 
 # ==========================================================
