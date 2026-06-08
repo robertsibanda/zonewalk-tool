@@ -9,19 +9,37 @@ set -e
 # Portal:    https://dev-robert.co.za/portal
 # =========================================================
 
-REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
+# --- Detect repo location (supports both cloned repo and curl pipe) ---
+SCRIPT_SRC="$0"
+if echo "$SCRIPT_SRC" | grep -q "install.sh"; then
+    REPO_DIR="$(cd "$(dirname "$0")" && pwd 2>/dev/null || echo "/tmp/zonewalk")"
+else
+    REPO_DIR="/tmp/zonewalk-install"
+    mkdir -p "$REPO_DIR"
+    echo -e "\033[1;33mFetching latest zonewalk...\033[0m"
+    for f in zonewalk.sh version.txt; do
+        curl -sSfL "https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/main/$f" -o "$REPO_DIR/$f" 2>/dev/null || {
+            echo -e "\033[0;31mFailed to fetch $f — check internet connection\033[0m"
+            exit 1
+        }
+    done
+fi
+
+# --- Colors ---
+RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'
+BLUE='\033[0;34m'; CYAN='\033[0;36m'; WHITE='\033[1;37m'; GRAY='\033[0;90m'; NC='\033[0m'
+OK="${GREEN}OK${NC}"; WARN="${YELLOW}WARN${NC}"; INFO="${CYAN}INFO${NC}"
+
+# --- Paths ---
 BIN_DIR="/usr/local/bin"
-OPM_DIR="${HOME}/.config/opencode"
-OPM_CONFIG="${OPM_DIR}/opencode.jsonc"
+OPCODE_DIR="${HOME}/.config/opencode"
+OPCODE_CONFIG="${OPCODE_DIR}/opencode.jsonc"
 ZONEWALK_BIN="${BIN_DIR}/zonewalk"
 ZONEWALK_SCRIPT="${REPO_DIR}/zonewalk.sh"
 VERSION_FILE="${REPO_DIR}/version.txt"
 REPO_URL="https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/main"
 
-# Colors
-RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'
-BLUE='\033[0;34m'; CYAN='\033[0;36m'; WHITE='\033[1;37m'; NC='\033[0m'
-
+# --- Header ---
 echo ""
 echo -e "${BLUE}╔══════════════════════════════════════════════════════════╗${NC}"
 echo -e "${BLUE}║${WHITE}  ZONEWALK INSTALLER${NC}                                         ${BLUE}║${NC}"
@@ -32,100 +50,117 @@ echo -e "${BLUE}║${NC}  ${CYAN}Portal:${NC}    https://dev-robert.co.za/portal
 echo -e "${BLUE}╚══════════════════════════════════════════════════════════╝${NC}"
 echo ""
 
-# ---- Detect OS / Package Manager ----
-if command -v apt &>/dev/null; then
-    PKG_MGR="apt"
-    PKG_INSTALL="apt install -y"
-    PKGS=("dnsutils" "whois" "curl" "netcat-openbsd" "openssl" "bind9-host")
-elif command -v yum &>/dev/null; then
-    PKG_MGR="yum"
-    PKG_INSTALL="yum install -y"
-    PKGS=("bind-utils" "whois" "curl" "nmap-ncat" "openssl" "bind")
-elif command -v dnf &>/dev/null; then
-    PKG_MGR="dnf"
-    PKG_INSTALL="dnf install -y"
-    PKGS=("bind-utils" "whois" "curl" "nmap-ncat" "openssl" "bind")
-elif command -v pacman &>/dev/null; then
-    PKG_MGR="pacman"
-    PKG_INSTALL="pacman -S --noconfirm"
-    PKGS=("bind" "whois" "curl" "openssl" "inetutils")
-elif command -v zypper &>/dev/null; then
-    PKG_MGR="zypper"
-    PKG_INSTALL="zypper install -y"
-    PKGS=("bind-utils" "whois" "curl" "netcat" "openssl")
-else
-    echo -e "${YELLOW}Package manager not detected — skipping dependency install.${NC}"
-    echo -e "${YELLOW}Ensure these are installed manually: dig whois curl nc openssl${NC}"
-    PKG_MGR=""
-fi
-
-# ---- Step 1: Install dependencies ----
-echo -e "${GREEN}[1/5]${NC} Installing dependencies..."
-if [ -n "$PKG_MGR" ]; then
-    echo -e "  ${INFO}Using ${WHITE}$PKG_MGR${NC}"
-    for pkg in "${PKGS[@]}"; do
-        if command -v "$pkg" &>/dev/null; then
-            # Already installed
-            :
-        else
-            echo -e "  ${YELLOW}Installing $pkg...${NC}"
-            $PKG_INSTALL "$pkg" >/dev/null 2>&1 || echo -e "  ${WARN}Failed to install $pkg"
-        fi
-    done
-    echo -e "  ${GREEN}OK${NC} Dependencies installed"
-else
-    echo -e "  ${WARN}Skipping — install manually: dig whois curl nc openssl"
-fi
-
-# ---- Step 2: Install zonewalk script ----
-echo -e "${GREEN}[2/5]${NC} Installing zonewalk..."
+# --- Self-elevate to root if not already ---
 if [ "$(id -u)" -ne 0 ]; then
-    BIN_DIR="${HOME}/.local/bin"
-    mkdir -p "$BIN_DIR"
+    echo -e "  ${INFO}Not running as root — re-executing with sudo..."
+    exec sudo bash "$0" "$@"
 fi
-cp "$ZONEWALK_SCRIPT" "$ZONEWALK_BIN" 2>/dev/null || {
-    echo -e "  ${YELLOW}Need sudo for system install...${NC}"
-    sudo cp "$ZONEWALK_SCRIPT" "$ZONEWALK_BIN"
-    sudo chmod +x "$ZONEWALK_BIN"
-}
-chmod +x "$ZONEWALK_BIN" 2>/dev/null
-echo -e "  ${GREEN}OK${NC} Installed to ${WHITE}$ZONEWALK_BIN${NC}"
 
-# Add to PATH
-if ! echo "$PATH" | grep -q "$BIN_DIR"; then
-    SHELL_PROFILE="${HOME}/.bashrc"
-    [ -f "${HOME}/.zshrc" ] && SHELL_PROFILE="${HOME}/.zshrc"
-    if ! grep -q "export PATH=.*${BIN_DIR}" "$SHELL_PROFILE" 2>/dev/null; then
-        echo "export PATH=\"\$PATH:${BIN_DIR}\"" >> "$SHELL_PROFILE"
-        echo -e "  ${GREEN}OK${NC} Added ${WHITE}$BIN_DIR${NC} to PATH in ${WHITE}$SHELL_PROFILE${NC}"
+# ==========================================================
+# STEP 1: Install system dependencies
+# ==========================================================
+echo -e "${GREEN}[1/5]${NC} Installing system dependencies..."
+
+# Map commands to packages per distro
+declare -A CMD_PKGS=(
+    [dig]="dnsutils,bind-utils,bind,bind-utils"
+    [whois]="whois,whois,whois,whois"
+    [curl]="curl,curl,curl,curl"
+    [nc]="netcat-openbsd,nmap-ncat,nmap-ncat,inetutils"
+    [openssl]="openssl,openssl,openssl,openssl"
+)
+
+detect_pkg_mgr() {
+    if command -v apt &>/dev/null; then echo "apt"
+    elif command -v dnf &>/dev/null; then echo "dnf"
+    elif command -v yum &>/dev/null; then echo "yum"
+    elif command -v pacman &>/dev/null; then echo "pacman"
+    elif command -v zypper &>/dev/null; then echo "zypper"
+    else echo "unknown"
     fi
-fi
+}
 
-# ---- Step 3: Verify critical tools ----
-echo -e "${GREEN}[3/5]${NC} Verifying tools..."
-MISSING=()
-for tool in dig whois curl nc openssl; do
-    command -v "$tool" &>/dev/null \
-        && echo -e "  ${GREEN}OK${NC} $tool found" \
-        || { echo -e "  ${RED}MISSING${NC} $tool"; MISSING+=("$tool"); }
+install_pkg() {
+    local cmd="$1" mgr="$2"
+    local pkgs="${CMD_PKGS[$cmd]}"
+    local pkg_list=(); IFS=',' read -ra pkg_list <<< "$pkgs"
+    local pkg_idx=0
+    case "$mgr" in
+        apt) pkg_idx=0 ;;
+        dnf|yum) pkg_idx=1 ;;
+        pacman) pkg_idx=2 ;;
+        zypper) pkg_idx=3 ;;
+        *) return 1 ;;
+    esac
+    local pkg="${pkg_list[$pkg_idx]}"
+    [ -z "$pkg" ] && return 1
+
+    case "$mgr" in
+        apt) apt install -y "$pkg" >/dev/null 2>&1 ;;
+        dnf) dnf install -y "$pkg" >/dev/null 2>&1 ;;
+        yum) yum install -y "$pkg" >/dev/null 2>&1 ;;
+        pacman) pacman -S --noconfirm "$pkg" >/dev/null 2>&1 ;;
+        zypper) zypper install -y "$pkg" >/dev/null 2>&1 ;;
+    esac
+    return $?
+}
+
+PKG_MGR=$(detect_pkg_mgr)
+echo -e "  ${INFO}Package manager: ${WHITE}${PKG_MGR}${NC}"
+
+for cmd in dig whois curl nc openssl; do
+    if command -v "$cmd" &>/dev/null; then
+        echo -e "  ${OK} $cmd already installed"
+    else
+        echo -e "  ${WARN} $cmd not found — installing..."
+        if [ "$PKG_MGR" != "unknown" ]; then
+            install_pkg "$cmd" "$PKG_MGR" && echo -e "  ${OK} $cmd installed" \
+                || echo -e "  ${RED} Failed to install $cmd — try manually${NC}"
+        else
+            echo -e "  ${RED} No package manager detected — install $cmd manually${NC}"
+        fi
+    fi
 done
 
-if [ ${#MISSING[@]} -gt 0 ]; then
-    echo ""
-    echo -e "  ${YELLOW}Missing tools: ${MISSING[*]}${NC}"
-    echo -e "  ${YELLOW}Install them manually for full functionality${NC}"
+# ==========================================================
+# STEP 2: Install zonewalk script
+# ==========================================================
+echo -e "${GREEN}[2/5]${NC} Installing zonewalk..."
+cp "$ZONEWALK_SCRIPT" "$ZONEWALK_BIN"
+chmod +x "$ZONEWALK_BIN"
+echo -e "  ${OK} Installed to ${WHITE}$ZONEWALK_BIN${NC}"
+
+# ==========================================================
+# STEP 3: Install & configure opencode
+# ==========================================================
+echo -e "${GREEN}[3/5]${NC} Setting up opencode..."
+
+install_opencode() {
+    echo -e "  ${INFO}Installing opencode..."
+    if command -v npm &>/dev/null; then
+        npm install -g @anthropic-ai/opencode 2>/dev/null && return 0
+        npm install -g opencode 2>/dev/null && return 0
+    fi
+    # Fallback: direct install script
+    curl -sSf https://opencode.ai/install.sh 2>/dev/null | bash >/dev/null 2>&1 && return 0
+    echo -e "  ${WARN}Automatic install failed — install opencode manually from https://opencode.ai"
+    return 1
+}
+
+if command -v opencode &>/dev/null; then
+    echo -e "  ${OK} opencode already installed: $(opencode --version 2>/dev/null || echo 'present')"
+else
+    install_opencode
 fi
 
-# ---- Step 4: Configure opencode (if installed) ----
-echo -e "${GREEN}[4/5]${NC} Configuring opencode..."
-if command -v opencode &>/dev/null; then
-    mkdir -p "$OPM_DIR"
-    if [ -f "$OPM_CONFIG" ]; then
-        if grep -q "zonewalk" "$OPM_CONFIG" 2>/dev/null; then
-            echo -e "  ${GREEN}OK${NC} zonewalk already configured in opencode"
-        else
-            sed -i '$ d' "$OPM_CONFIG"
-            cat >> "$OPM_CONFIG" << EOF
+# Add zonewalk as a tool in opencode config
+mkdir -p "$OPCODE_DIR"
+if [ -f "$OPCODE_CONFIG" ]; then
+    if grep -q "zonewalk" "$OPCODE_CONFIG" 2>/dev/null; then
+        echo -e "  ${OK} zonewalk already configured in opencode"
+    else
+        sed -i '$ d' "$OPCODE_CONFIG"
+        cat >> "$OPCODE_CONFIG" << EOF
 ,
   "tools": {
     "zonewalk": {
@@ -136,10 +171,10 @@ if command -v opencode &>/dev/null; then
   }
 }
 EOF
-            echo -e "  ${GREEN}OK${NC} Added zonewalk tool to opencode config"
-        fi
-    else
-        cat > "$OPM_CONFIG" << EOF
+        echo -e "  ${OK} Added zonewalk tool to opencode config"
+    fi
+else
+    cat > "$OPCODE_CONFIG" << EOF
 {
   "\$schema": "https://opencode.ai/config.json",
   "tools": {
@@ -151,42 +186,62 @@ EOF
   }
 }
 EOF
-        echo -e "  ${GREEN}OK${NC} Created opencode config with zonewalk tool"
-    fi
-else
-    echo -e "  ${YELLOW}opencode not installed — skipping config${NC}"
+    echo -e "  ${OK} Created opencode config with zonewalk tool"
 fi
 
-# ---- Step 5: Set up daily update cron ----
-echo -e "${GREEN}[5/5]${NC} Setting up daily update checks..."
-UPDATE_SCRIPT="${BIN_DIR}/zonewalk-check-update"
-cat > "$UPDATE_SCRIPT" << UEOF
+# ==========================================================
+# STEP 4: Set up daily update cron
+# ==========================================================
+echo -e "${GREEN}[4/5]${NC} Setting up daily update checks..."
+
+UPDATE_SCRIPT="/usr/local/bin/zonewalk-check-update"
+cat > "$UPDATE_SCRIPT" << 'UEOF'
 #!/bin/bash
-LOCAL_VERSION=\$(cat "${VERSION_FILE}" 2>/dev/null || echo "0")
-REMOTE_VERSION=\$(curl -sS --max-time 5 "${REPO_URL}/version.txt" 2>/dev/null | head -1)
-if [ -n "\$REMOTE_VERSION" ] && [ "\$REMOTE_VERSION" != "\$LOCAL_VERSION" ]; then
-    echo "ZONEWALK update available: v\$LOCAL_VERSION -> v\$REMOTE_VERSION"
-    echo "Update: curl -sSL ${REPO_URL}/install.sh | bash"
+REPO_URL="https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/main"
+LOCAL_VERSION=$(cat /usr/local/share/zonewalk/version.txt 2>/dev/null || echo "0")
+REMOTE_VERSION=$(curl -sS --max-time 5 "${REPO_URL}/version.txt" 2>/dev/null | head -1)
+if [ -n "$REMOTE_VERSION" ] && [ "$REMOTE_VERSION" != "$LOCAL_VERSION" ]; then
+    echo "ZONEWALK update available: v${LOCAL_VERSION} -> v${REMOTE_VERSION}"
+    echo "Update: curl -sSL ${REPO_URL}/install.sh | sudo bash"
 fi
 UEOF
 chmod +x "$UPDATE_SCRIPT"
 
+mkdir -p /usr/local/share/zonewalk
+cp "$VERSION_FILE" /usr/local/share/zonewalk/version.txt
+
 if command -v crontab &>/dev/null; then
     (crontab -l 2>/dev/null | grep -q "zonewalk-check-update") || {
         (crontab -l 2>/dev/null; echo "0 6 * * * ${UPDATE_SCRIPT}") | crontab -
-        echo -e "  ${GREEN}OK${NC} Cron job added (daily at 06:00)"
+        echo -e "  ${OK} Cron job added (daily at 06:00)"
     }
-else
-    echo -e "  ${YELLOW}crontab not available — skipping scheduled updates${NC}"
 fi
 
-# ---- Done ----
+# ==========================================================
+# STEP 5: Verify installation
+# ==========================================================
+echo -e "${GREEN}[5/5]${NC} Verifying installation..."
+PASS=true
+for tool in dig whois curl nc openssl; do
+    command -v "$tool" &>/dev/null && echo -e "  ${OK} $tool" || { echo -e "  ${RED} MISSING $tool${NC}"; PASS=false; }
+done
+if [ -x "$ZONEWALK_BIN" ]; then
+    echo -e "  ${OK} zonewalk"
+else
+    echo -e "  ${RED} zonewalk not installed${NC}"
+    PASS=false
+fi
+
+# ==========================================================
+# DONE
+# ==========================================================
 echo ""
 echo -e "${GREEN}╔══════════════════════════════════════════════════════════╗${NC}"
 echo -e "${GREEN}║${WHITE}  INSTALLATION COMPLETE${NC}                                      ${GREEN}║${NC}"
 echo -e "${GREEN}╚══════════════════════════════════════════════════════════╝${NC}"
 echo ""
-echo -e "  ${WHITE}Usage:${NC} zonewalk domain.co.za [options]"
+echo -e "  ${WHITE}Now run:${NC}"
+echo "    zonewalk domain.co.za"
 echo ""
 echo -e "  ${WHITE}Examples:${NC}"
 echo "    zonewalk example.co.za"
@@ -194,20 +249,6 @@ echo "    zonewalk example.co.za --issue mail-send"
 echo "    zonewalk example.co.za --deep --ports"
 echo "    zonewalk example.co.za --guide"
 echo ""
-echo -e "  ${WHITE}Options:${NC}"
-echo "    --issue <type>   mail-send | mail-recv | web-down | dns-fail"
-echo "    --deep           Subdomain enumeration"
-echo "    --ports          Port scan"
-echo "    --ip-reputation  Blocklist check"
-echo "    --ptr            PTR consistency audit"
-echo "    --guide          Fix guide for found issues"
-echo "    --headers <file> Email header analysis"
-echo ""
 echo -e "  ${CYAN}Portfolio:${NC} https://dev-robert.co.za"
 echo -e "  ${CYAN}Portal:${NC}    https://dev-robert.co.za/portal"
 echo ""
-
-if ! echo "$PATH" | grep -q "$BIN_DIR"; then
-    echo -e "${YELLOW}Run 'source ~/.bashrc' to update your PATH, or log out and back in.${NC}"
-    echo ""
-fi
