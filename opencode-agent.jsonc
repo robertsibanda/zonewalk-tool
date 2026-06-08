@@ -1,0 +1,48 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "name": "1-grid Agent",
+  "description": "1-grid support agent with DNS diagnostics, ticket/conversation warehouse, and multi-user support",
+
+  "tools": {
+    "zonewalk": {
+      "description": "DNS & mail diagnostics tool. Usage: zonewalk <domain> [options]",
+      "command": "zonewalk",
+      "args": ["$domain"]
+    },
+    "warehouse-search": {
+      "description": "Search tickets, conversations, and KB in the warehouse. Usage: warehouse-search <query>",
+      "command": "warehouse-query",
+      "args": ["search", "$query"]
+    },
+    "warehouse-tickets": {
+      "description": "List recent tickets. Usage: warehouse-tickets [--q <query>] [--limit N]",
+      "command": "warehouse-query",
+      "args": ["tickets", "--q", "$query", "--limit", "$limit"]
+    },
+    "warehouse-save-ticket": {
+      "description": "Save a ticket to the warehouse. Usage: warehouse-save-ticket --ref <ref> --domain <domain> --desc <description>",
+      "command": "warehouse-query",
+      "args": ["save-ticket", "--ref", "$ref", "--domain", "$domain", "--desc", "$desc"]
+    },
+    "warehouse-save-conv": {
+      "description": "Save a conversation exchange to the warehouse. Usage: warehouse-save-conv --session <id> --msg <user_msg> --resp <ai_resp>",
+      "command": "warehouse-query",
+      "args": ["save-conv", "--session", "$session", "--msg", "$msg", "--resp", "$resp"]
+    },
+    "warehouse-my-convs": {
+      "description": "List my recent conversations from the warehouse",
+      "command": "warehouse-query",
+      "args": ["my-convs", "--limit", "$limit"]
+    },
+    "warehouse-my-tickets": {
+      "description": "List my recent tickets from the warehouse",
+      "command": "warehouse-query",
+      "args": ["my-tickets", "--limit", "$limit"]
+    },
+    "warehouse-counts": {
+      "description": "Show warehouse collection counts",
+      "command": "warehouse-query",
+      "args": ["counts"]
+    }
+  }
+}

@@ -96,7 +96,7 @@ show_banner() {
     echo -e "${BLUE}╔══════════════════════════════════════════════════════════╗${NC}"
     echo -e "${BLUE}║${WHITE}  ZONEWALK v${ZONEWALK_VERSION} — DNS & Mail Diagnostics${NC}            ${BLUE}║${NC}"
     echo -e "${BLUE}║${NC}                                                      ${BLUE}║${NC}"
-    echo -e "${BLUE}║${NC}  ${GREEN}Developed by Robert Sibanda${NC}                          ${BLUE}║${NC}"
+    echo -e "${BLUE}║${NC}  ${GREEN}1-grid Agent Toolkit${NC}                                   ${BLUE}║${NC}"
     echo -e "${BLUE}║${NC}  ${CYAN}Portfolio:${NC} https://dev-robert.co.za                  ${BLUE}║${NC}"
     echo -e "${BLUE}║${NC}  ${CYAN}Portal:${NC}    https://dev-robert.co.za/portal            ${BLUE}║${NC}"
     echo -e "${BLUE}║${NC}                                                      ${BLUE}║${NC}"

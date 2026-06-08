@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "6a19bd8bb09df85a86a329d9",
+    "id": 1,
+    "hostname": "srv86.hostserv.co.za",
+    "ip": "41.185.8.158",
+    "hosting_type": "cPanel Shared",
+    "os": "Linux",
+    "known_issues": null,
+    "notes": "CPU/RAM info unavailable \u2014 SSH port 22 filtered (network attack mitigation). Apache on 80/443. Softaculous connection-lost issue pending domain from client."
+  }
+]

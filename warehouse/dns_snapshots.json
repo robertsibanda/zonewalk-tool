@@ -1,0 +1,31 @@
+[
+  {
+    "_id": "6a1ee2a95422a299eed3f2f5",
+    "domain": "isp247.co.za",
+    "note": "Before DKIM key regeneration (private key was missing, DNS had old public key)",
+    "records": {
+      "A": "41.185.64.122",
+      "NS": [
+        "myserver.ns.1-grid.net",
+        "myserver.ns.1-grid.co.za",
+        "myserver.ns.1-grid.co.uk",
+        "myserver.ns.1-grid.com"
+      ],
+      "MX": [
+        "5 1-grid-mx01.co.za",
+        "5 1-grid-mx02.com",
+        "5 1-grid-mx03.co.za",
+        "5 1-grid-mx04.com"
+      ],
+      "SPF": "v=spf1 ip4:41.185.64.122 include:relay.mailchannels.net +ip4:41.185.64.63 ~all",
+      "DKIM_selector": "default._domainkey.isp247.co.za",
+      "DKIM_value": "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv7b0Pg+GjQnqTiY4amNsIm/n3U78HSU8ajOkEtn1pbz2L0CfrwKVbMp5b0kybSp+DA8q6YVpFYt/Gtytj6jH6MzqIlay1cL9YyU19gJ+DzYHFDl/OjWEENnwjCJGjSL+FqR9YnDfnsSTQjS9XnzUvRHry1OFhKF43eHovj3BOzYvyL3xMXmRQn50Du1LES0vMqfN/vCIIeZUOD5DJlVbpeWEZfmBlCES0Dzp5AbiG8eVwfUmZ2i/EwdbOx9tKzndzNAUs+Cf69h1BsqVtrv2SrRiJLepZno2zgcI+VjtHEiFTMNEJ4zDpvrSp1eSH6CgVBPv8J/QKdaz+zPYsy7leQIDAQAB",
+      "DMARC": "v=DMARC1;p=quarantine;sp=none;adkim=r;aspf=r;pct=100;fo=0;rf=afrf;ri=86400",
+      "PTR": "row252-cvps01.hostserv.co.za",
+      "HELO": "row252-cvps01.hostserv.co.za",
+      "Server": "row252-cvps01 (41.185.64.122)",
+      "MailChannels": "relay.mailchannels.net in SPF"
+    },
+    "saved_at": "2026-06-02T14:03:21.905000"
+  }
+]

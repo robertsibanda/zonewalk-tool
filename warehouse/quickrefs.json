@@ -1,0 +1,546 @@
+[
+  {
+    "_id": "6a19bd8bb09df85a86a329da",
+    "id": 5,
+    "category": "Email",
+    "key_name": "DKIM Install",
+    "value": "/usr/local/cpanel/bin/dkim_keys_install && /scripts/buildeximconf"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329db",
+    "id": 7,
+    "category": "Email",
+    "key_name": "Delete old queue",
+    "value": "exiqgrep -o 3600 -i | xargs exim -Mrm"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329dc",
+    "id": 8,
+    "category": "Email",
+    "key_name": "Rebuild Exim",
+    "value": "/usr/local/cpanel/scripts/buildeximconf && service exim restart && service dovecot restart"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329dd",
+    "id": 9,
+    "category": "Email",
+    "key_name": "Dovecot restart",
+    "value": "systemctl restart dovecot"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329de",
+    "id": 10,
+    "category": "Spam",
+    "key_name": "Microsoft Delisting",
+    "value": "https://olcsupport.office.com/"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329df",
+    "id": 11,
+    "category": "CVPS",
+    "key_name": "SELinux fix",
+    "value": "setenforce 0"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329e0",
+    "id": 12,
+    "category": "Email",
+    "key_name": "Roundcube repair",
+    "value": "mysqlcheck -r roundcube"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329e1",
+    "id": 13,
+    "category": "Email",
+    "key_name": "Dovecot who",
+    "value": "doveadm who"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329e2",
+    "id": 14,
+    "category": "Spam",
+    "key_name": "Catch spammers",
+    "value": "catch_spammers.sh"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329e3",
+    "id": 15,
+    "category": "Email",
+    "key_name": "Unsuspend SMTP",
+    "value": "whmapi1 unsuspend_outgoing_email user=$(/scripts/whoowns <domain>) email=<email>"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329e4",
+    "id": 16,
+    "category": "Email",
+    "key_name": "Suspend SMTP",
+    "value": "whmapi1 suspend_outgoing_email user=$(/scripts/whoowns <domain>) email=<email>"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329e5",
+    "id": 17,
+    "category": "Domain Registration",
+    "key_name": "OpenProvider",
+    "value": "OpenProvider (Hosting Concepts B.V. d/b/a Registrar.eu, IANA ID 1647) is 1-grids reseller registrar for .com TLDs. WHOIS shows OpenProvider but domain IS through 1-grid."
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329e6",
+    "id": 18,
+    "category": "Server",
+    "key_name": "Collectd Graphite Config",
+    "value": "LoadPlugin write_graphite\\n<Plugin write_graphite>\\n  <Node \"main\">\\n    Host \"graphite.stats.1-grid.com\"\\n    Protocol \"tcp\"\\n    LogSendErrors true\\n    Prefix \"collectd.cpanel-shared.\"\\n    EscapeCharacter \"_\"\\n    SeparateInstances true\\n  </Node>\\n</Plugin>\\n\\nPlace in: /etc/collectd.d/00-graphite.conf"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329e7",
+    "id": 19,
+    "category": "Server",
+    "key_name": "Teleport Install CentOS 7",
+    "value": "curl -LO https://get.gravitational.com/teleport-17.3.0-1.x86_64.rpm && yum install -y ./teleport-17.3.0-1.x86_64.rpm\\nThen: sudo bash -c \"\n#!/bin/sh\necho -e \"An error has occurred. \\nThe token may be expired or invalid. \\nPlease check log for further details.\"\nexit 1\"\\nConfigure /etc/teleport.yaml, then: systemctl enable --now teleport"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329e8",
+    "id": 20,
+    "category": "Server",
+    "key_name": "Teleport Uninstall",
+    "value": "systemctl stop teleport\\npkill -f teleport\\nrm -rf /var/lib/teleport\\nrm -f /etc/teleport.yaml\\nyum remove teleport"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329e9",
+    "id": 21,
+    "category": "Server",
+    "key_name": "Teleport Config Template",
+    "value": "version: v3\\nteleport:\\n  auth_token: \"<token>\"\\n  auth_server: \"teleport.hostserv.co.za:3025\"\\n  data_dir: /var/lib/teleport\\nauth_service:\\n  enabled: \"no\"\\nssh_service:\\n  enabled: \"yes\"\\nproxy_service:\\n  enabled: \"no\""
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329ea",
+    "id": 22,
+    "category": "Server",
+    "key_name": "CSF Teleport Allow",
+    "value": "nano /etc/csf/csf.conf > add 41.61.20.124:3025"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329eb",
+    "id": 23,
+    "category": "Server",
+    "key_name": "Archive Search",
+    "value": "ls -al /mnt/data/home/*/cancelled_archive/ecopizza.tar.gz"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329ec",
+    "id": 24,
+    "category": "Server",
+    "key_name": "Archive Restore",
+    "value": "rsync -avz --progress /mnt/data/home/lnxwsd06.hostserv.co.za/cancelled_archive/ecopizza.tar.gz root@lnxwsd06.hostserv.co.za:/home/"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329ed",
+    "id": 25,
+    "category": "Email",
+    "key_name": "Postfix Mailchannels Refused Flush",
+    "value": "for i in $(postqueue -p | grep refused | grep mailchannels | awk \"{print $3}\"| cut -d \"[\" -f2 | cut -d \"]\" -f1 | egrep \"^[0-9]\" | sort | uniq) ; do csf -ta $i 24h ; done ; postqueue -f ; postqueue -p"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329ee",
+    "id": 26,
+    "category": "cPanel",
+    "key_name": "Fix File Permissions",
+    "value": "find . -type f -exec chmod 644 {} +\\nfind . -type d -exec chmod 755 {} +"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329ef",
+    "id": 27,
+    "category": "Server",
+    "key_name": "Apache MaxRequestWorkers Check",
+    "value": "grep MaxRequestWorkers /usr/local/apache/logs/error_log"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329f0",
+    "id": 28,
+    "category": "Server",
+    "key_name": "Apache Connection Check",
+    "value": "apachectl fullstatus"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329f1",
+    "id": 29,
+    "category": "Security",
+    "key_name": "Block All Countries Except ZA",
+    "value": "<IfModule mod_maxminddb.c>\\n    MaxMindDBEnable On\\n    MaxMindDBFile DB /path/to/GeoLite2-Country.mmdb\\n    MaxMindDBEnv COUNTRY_CODE DB/country/iso_code\\n    SetEnvIf COUNTRY_CODE ^ZA$ AllowCountry\\n    Order Deny,Allow\\n    Deny from all\\n    Allow from env=AllowCountry\\n</IfModule>"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329f2",
+    "id": 30,
+    "category": "Email",
+    "key_name": "Dovecot Reverse Sync",
+    "value": "python2 /root/sysadmin/dovecot-sync/migrate-mailbox.py -R $MAILBOX"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329f3",
+    "id": 31,
+    "category": "Email",
+    "key_name": "Dovecot Sync TCP",
+    "value": "doveadm -D -o doveadm_password=vEHGutxdrw5HJ2 sync -u <user@domain.tld> tcp:<mail-storage-server>:12345"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329f4",
+    "id": 32,
+    "category": "Email",
+    "key_name": "MailStorage Perm Reset",
+    "value": "/scripts/mailstorage_cpresetperms.sh <servername> <mailbox@domain.name>"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329f5",
+    "id": 33,
+    "category": "Email",
+    "key_name": "MailStorage Bulk Perm Loop",
+    "value": "for i in $(cat list.txt); do /scripts/mailstorage_cpresetperms_home2.sh <server> $i; done"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329f6",
+    "id": 34,
+    "category": "Email",
+    "key_name": "Dovecot Force Resync + Index",
+    "value": "while IFS= read -r EMAIL; do doveadm force-resync -u \"$EMAIL\" INBOX; doveadm force-resync -u \"$EMAIL\" INBOX.*; doveadm index -u \"$EMAIL\" INBOX; doveadm index -u \"$EMAIL\" INBOX.*; done < email.txt"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329f7",
+    "id": 35,
+    "category": "Email",
+    "key_name": "Chown Mail Dir",
+    "value": "chown -R <user>:<group> /home/<user>/mail/<domain>/"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329f8",
+    "id": 36,
+    "category": "Email",
+    "key_name": "Reverse Sync Script",
+    "value": "python2 /root/sysadmin/dovecot-sync/migrate-mailbox.py -R <email>"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329f9",
+    "id": 37,
+    "category": "Email",
+    "key_name": "Dovecot Live Sync",
+    "value": "doveadm -D -o doveadm_password=vEHGutxdrw5HJ2 sync -u <user@domain.tld> tcp:<storage-server>:12345"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329fa",
+    "id": 38,
+    "category": "Security",
+    "key_name": "hacklink_malware_cleanup",
+    "value": "grep -rl \"hacklinkmarket\\|wp_core_check\" /home/*/public_html/ to find; sed -i \"/hacklink\\|hacklinkmarket\\|wp_core_check\\|Telegram: https:\\/\\/t.me/d\" to remove. Then change all passwords, add define(\"DISALLOW_FILE_EDIT\", true); define(\"DISALLOW_FILE_MODS\", true); to wp-config.php"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329fb",
+    "id": 39,
+    "category": "SOP",
+    "key_name": "freshdesk-log-template",
+    "value": "Channel: [Ticket/Call]\\nTicket #: XXXX\\nDomain: domain.co.za\\nServer IP: X.X.X.X\\nPTR: server.hostserv.co.za\\nCategory:\\nSub-category:\\nDescription:\\nOutcome: Resolved on Contact"
+  },
+  {
+    "_id": "6a19bd8bb09df85a86a329fc",
+    "id": 40,
+    "category": "Contact",
+    "key_name": "27832892985",
+    "value": "Bryan Timkoe - datatim.co.za - Ticket 2701983"
+  },
+  {
+    "_id": "6a1c32895422a299eed30f11",
+    "key_name": "Kill DNS Zone",
+    "category": "DNS",
+    "value": "SSH into any server on the same cluster, then:\n/scripts/killdns <domain>\nThis deletes the DNS zone from the cluster (linus nameservers). Works even if zone is on a different server in the same cluster (e.g., delete Parked03 zones from srv66)."
+  },
+  {
+    "_id": "6a1c32895422a299eed30f13",
+    "key_name": "Whoowns Domain",
+    "category": "DNS",
+    "value": "/scripts/whoowns <domain>\nReturns the cPanel username that owns a domain on the server."
+  },
+  {
+    "_id": "6a1c32895422a299eed30f15",
+    "key_name": "Cluster Zone Deletion",
+    "category": "Infra",
+    "value": "Parked03 and srv66 are on the same cluster. You can delete any DNS zone on the cluster from any server on that cluster. Parked03 OS too old for Teleport - use srv66 instead."
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdce0",
+    "id": 5,
+    "category": "Email",
+    "key_name": "DKIM Install",
+    "value": "/usr/local/cpanel/bin/dkim_keys_install && /scripts/buildeximconf"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdce1",
+    "id": 7,
+    "category": "Email",
+    "key_name": "Delete old queue",
+    "value": "exiqgrep -o 3600 -i | xargs exim -Mrm"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdce2",
+    "id": 8,
+    "category": "Email",
+    "key_name": "Rebuild Exim",
+    "value": "/usr/local/cpanel/scripts/buildeximconf && service exim restart && service dovecot restart"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdce3",
+    "id": 9,
+    "category": "Email",
+    "key_name": "Dovecot restart",
+    "value": "systemctl restart dovecot"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdce4",
+    "id": 10,
+    "category": "Spam",
+    "key_name": "Microsoft Delisting",
+    "value": "https://olcsupport.office.com/"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdce5",
+    "id": 11,
+    "category": "CVPS",
+    "key_name": "SELinux fix",
+    "value": "setenforce 0"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdce6",
+    "id": 12,
+    "category": "Email",
+    "key_name": "Roundcube repair",
+    "value": "mysqlcheck -r roundcube"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdce7",
+    "id": 13,
+    "category": "Email",
+    "key_name": "Dovecot who",
+    "value": "doveadm who"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdce8",
+    "id": 14,
+    "category": "Spam",
+    "key_name": "Catch spammers",
+    "value": "catch_spammers.sh"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdce9",
+    "id": 15,
+    "category": "Email",
+    "key_name": "Unsuspend SMTP",
+    "value": "whmapi1 unsuspend_outgoing_email user=$(/scripts/whoowns <domain>) email=<email>"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcea",
+    "id": 16,
+    "category": "Email",
+    "key_name": "Suspend SMTP",
+    "value": "whmapi1 suspend_outgoing_email user=$(/scripts/whoowns <domain>) email=<email>"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdceb",
+    "id": 17,
+    "category": "Domain Registration",
+    "key_name": "OpenProvider",
+    "value": "OpenProvider (Hosting Concepts B.V. d/b/a Registrar.eu, IANA ID 1647) is 1-grids reseller registrar for .com TLDs. WHOIS shows OpenProvider but domain IS through 1-grid."
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcec",
+    "id": 18,
+    "category": "Server",
+    "key_name": "Collectd Graphite Config",
+    "value": "LoadPlugin write_graphite\\n<Plugin write_graphite>\\n  <Node \"main\">\\n    Host \"graphite.stats.1-grid.com\"\\n    Protocol \"tcp\"\\n    LogSendErrors true\\n    Prefix \"collectd.cpanel-shared.\"\\n    EscapeCharacter \"_\"\\n    SeparateInstances true\\n  </Node>\\n</Plugin>\\n\\nPlace in: /etc/collectd.d/00-graphite.conf"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdced",
+    "id": 19,
+    "category": "Server",
+    "key_name": "Teleport Install CentOS 7",
+    "value": "curl -LO https://get.gravitational.com/teleport-17.3.0-1.x86_64.rpm && yum install -y ./teleport-17.3.0-1.x86_64.rpm\\nThen: sudo bash -c \"\n#!/bin/sh\necho -e \"An error has occurred. \\nThe token may be expired or invalid. \\nPlease check log for further details.\"\nexit 1\"\\nConfigure /etc/teleport.yaml, then: systemctl enable --now teleport"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcee",
+    "id": 20,
+    "category": "Server",
+    "key_name": "Teleport Uninstall",
+    "value": "systemctl stop teleport\\npkill -f teleport\\nrm -rf /var/lib/teleport\\nrm -f /etc/teleport.yaml\\nyum remove teleport"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcef",
+    "id": 21,
+    "category": "Server",
+    "key_name": "Teleport Config Template",
+    "value": "version: v3\\nteleport:\\n  auth_token: \"<token>\"\\n  auth_server: \"teleport.hostserv.co.za:3025\"\\n  data_dir: /var/lib/teleport\\nauth_service:\\n  enabled: \"no\"\\nssh_service:\\n  enabled: \"yes\"\\nproxy_service:\\n  enabled: \"no\""
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcf0",
+    "id": 22,
+    "category": "Server",
+    "key_name": "CSF Teleport Allow",
+    "value": "nano /etc/csf/csf.conf > add 41.61.20.124:3025"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcf1",
+    "id": 23,
+    "category": "Server",
+    "key_name": "Archive Search",
+    "value": "ls -al /mnt/data/home/*/cancelled_archive/ecopizza.tar.gz"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcf2",
+    "id": 24,
+    "category": "Server",
+    "key_name": "Archive Restore",
+    "value": "rsync -avz --progress /mnt/data/home/lnxwsd06.hostserv.co.za/cancelled_archive/ecopizza.tar.gz root@lnxwsd06.hostserv.co.za:/home/"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcf3",
+    "id": 25,
+    "category": "Email",
+    "key_name": "Postfix Mailchannels Refused Flush",
+    "value": "for i in $(postqueue -p | grep refused | grep mailchannels | awk \"{print $3}\"| cut -d \"[\" -f2 | cut -d \"]\" -f1 | egrep \"^[0-9]\" | sort | uniq) ; do csf -ta $i 24h ; done ; postqueue -f ; postqueue -p"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcf4",
+    "id": 26,
+    "category": "cPanel",
+    "key_name": "Fix File Permissions",
+    "value": "find . -type f -exec chmod 644 {} +\\nfind . -type d -exec chmod 755 {} +"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcf5",
+    "id": 27,
+    "category": "Server",
+    "key_name": "Apache MaxRequestWorkers Check",
+    "value": "grep MaxRequestWorkers /usr/local/apache/logs/error_log"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcf6",
+    "id": 28,
+    "category": "Server",
+    "key_name": "Apache Connection Check",
+    "value": "apachectl fullstatus"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcf7",
+    "id": 29,
+    "category": "Security",
+    "key_name": "Block All Countries Except ZA",
+    "value": "<IfModule mod_maxminddb.c>\\n    MaxMindDBEnable On\\n    MaxMindDBFile DB /path/to/GeoLite2-Country.mmdb\\n    MaxMindDBEnv COUNTRY_CODE DB/country/iso_code\\n    SetEnvIf COUNTRY_CODE ^ZA$ AllowCountry\\n    Order Deny,Allow\\n    Deny from all\\n    Allow from env=AllowCountry\\n</IfModule>"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcf8",
+    "id": 30,
+    "category": "Email",
+    "key_name": "Dovecot Reverse Sync",
+    "value": "python2 /root/sysadmin/dovecot-sync/migrate-mailbox.py -R $MAILBOX"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcf9",
+    "id": 31,
+    "category": "Email",
+    "key_name": "Dovecot Sync TCP",
+    "value": "doveadm -D -o doveadm_password=vEHGutxdrw5HJ2 sync -u <user@domain.tld> tcp:<mail-storage-server>:12345"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcfa",
+    "id": 32,
+    "category": "Email",
+    "key_name": "MailStorage Perm Reset",
+    "value": "/scripts/mailstorage_cpresetperms.sh <servername> <mailbox@domain.name>"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcfb",
+    "id": 33,
+    "category": "Email",
+    "key_name": "MailStorage Bulk Perm Loop",
+    "value": "for i in $(cat list.txt); do /scripts/mailstorage_cpresetperms_home2.sh <server> $i; done"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcfc",
+    "id": 34,
+    "category": "Email",
+    "key_name": "Dovecot Force Resync + Index",
+    "value": "while IFS= read -r EMAIL; do doveadm force-resync -u \"$EMAIL\" INBOX; doveadm force-resync -u \"$EMAIL\" INBOX.*; doveadm index -u \"$EMAIL\" INBOX; doveadm index -u \"$EMAIL\" INBOX.*; done < email.txt"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcfd",
+    "id": 35,
+    "category": "Email",
+    "key_name": "Chown Mail Dir",
+    "value": "chown -R <user>:<group> /home/<user>/mail/<domain>/"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcfe",
+    "id": 36,
+    "category": "Email",
+    "key_name": "Reverse Sync Script",
+    "value": "python2 /root/sysadmin/dovecot-sync/migrate-mailbox.py -R <email>"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdcff",
+    "id": 37,
+    "category": "Email",
+    "key_name": "Dovecot Live Sync",
+    "value": "doveadm -D -o doveadm_password=vEHGutxdrw5HJ2 sync -u <user@domain.tld> tcp:<storage-server>:12345"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdd00",
+    "id": 38,
+    "category": "Security",
+    "key_name": "hacklink_malware_cleanup",
+    "value": "grep -rl \"hacklinkmarket\\|wp_core_check\" /home/*/public_html/ to find; sed -i \"/hacklink\\|hacklinkmarket\\|wp_core_check\\|Telegram: https:\\/\\/t.me/d\" to remove. Then change all passwords, add define(\"DISALLOW_FILE_EDIT\", true); define(\"DISALLOW_FILE_MODS\", true); to wp-config.php"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdd01",
+    "id": 39,
+    "category": "SOP",
+    "key_name": "freshdesk-log-template",
+    "value": "Channel: [Ticket/Call]\\nTicket #: XXXX\\nDomain: domain.co.za\\nServer IP: X.X.X.X\\nPTR: server.hostserv.co.za\\nCategory:\\nSub-category:\\nDescription:\\nOutcome: Resolved on Contact"
+  },
+  {
+    "_id": "6a1eddcccbc830e85b3bdd02",
+    "id": 40,
+    "category": "Contact",
+    "key_name": "27832892985",
+    "value": "Bryan Timkoe - datatim.co.za - Ticket 2701983"
+  },
+  {
+    "_id": "6a1ee1f25422a299eed3f2c5",
+    "title": "Missing DKIM private key",
+    "content": "If DKIM shows Valid in WHM Email Deliverability but emails fail DKIM check, the private key file may be missing from the server.\n\nFix:\n1. Check: ls -la /var/cpanel/domain_keys/private/<domain>\n2. Generate: openssl genrsa -out /var/cpanel/domain_keys/private/<domain> 2048\n3. Extract pub: openssl rsa -pubout -in /var/cpanel/domain_keys/private/<domain> -out /var/cpanel/domain_keys/public/<domain>\n4. Restart Exim: /scripts/restartsrv_exim\n5. Verify in logs: grep test@mail-tester.com /var/log/exim_mainlog",
+    "tags": [
+      "dkim",
+      "exim",
+      "private key",
+      "hotmail",
+      "550 5.7.515"
+    ],
+    "timestamp": "2026-06-02T14:00:18.866000"
+  },
+  {
+    "_id": "6a1ee1f25422a299eed3f2c7",
+    "title": "MailChannels delisting request",
+    "content": "When a client gets MailChannels block:\n1. Submit delisting via MailChannels portal\n2. Advise client to wait 1-2 hours\n3. Ensure SPF, DKIM, and DMARC are correctly configured\n4. Check sending patterns - no burst sending, confirmed opt-in lists only",
+    "tags": [
+      "mailchannels",
+      "delisting",
+      "blocked",
+      "spam"
+    ],
+    "timestamp": "2026-06-02T14:00:18.866000"
+  },
+  {
+    "_id": "6a1ee1f25422a299eed3f2c9",
+    "title": "Spam Titan license renewal",
+    "content": "Spam Titan panel: http://41.185.250.100 (inaccessible from this VPS).\nRenewal done via 1-grid internal process.\nWhen expired: incoming mail may be dropped, not queued.",
+    "tags": [
+      "spam titan",
+      "license",
+      "expired"
+    ],
+    "timestamp": "2026-06-02T14:00:18.866000"
+  }
+]

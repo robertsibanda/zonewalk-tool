@@ -1,0 +1,5161 @@
+[
+  {
+    "_id": "6a177fcbba1110e516c1bc6f",
+    "action": "zonewalk",
+    "detail": "1-grid.com",
+    "metadata": {
+      "domain": "1-grid.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:35:39.036019"
+  },
+  {
+    "_id": "6a177feeba1110e516c1bc70",
+    "action": "zonewalk",
+    "detail": "google.com",
+    "metadata": {
+      "domain": "google.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:36:14.996963"
+  },
+  {
+    "_id": "6a17800fba1110e516c1bc71",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-05-27T23:36:47.865076"
+  },
+  {
+    "_id": "6a178132c18489396b80b616",
+    "action": "zonewalk",
+    "detail": "1-grid.com",
+    "metadata": {
+      "domain": "1-grid.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:41:38.075315"
+  },
+  {
+    "_id": "6a178149c18489396b80b617",
+    "action": "zonewalk",
+    "detail": "1-grid.com",
+    "metadata": {
+      "domain": "1-grid.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:42:01.616125"
+  },
+  {
+    "_id": "6a178161c18489396b80b618",
+    "action": "zonewalk",
+    "detail": "1-grid.com",
+    "metadata": {
+      "domain": "1-grid.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:42:25.645138"
+  },
+  {
+    "_id": "6a178179c18489396b80b619",
+    "action": "zonewalk",
+    "detail": "1-grid.com",
+    "metadata": {
+      "domain": "1-grid.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:42:49.352537"
+  },
+  {
+    "_id": "6a178191c18489396b80b61a",
+    "action": "zonewalk",
+    "detail": "1-grid.com",
+    "metadata": {
+      "domain": "1-grid.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:43:13.388951"
+  },
+  {
+    "_id": "6a1781a9c18489396b80b61b",
+    "action": "zonewalk",
+    "detail": "1-grid.com",
+    "metadata": {
+      "domain": "1-grid.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:43:37.357331"
+  },
+  {
+    "_id": "6a1781bcc18489396b80b61c",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:43:56.854931"
+  },
+  {
+    "_id": "6a1781c1c18489396b80b61d",
+    "action": "zonewalk",
+    "detail": "1-grid.com",
+    "metadata": {
+      "domain": "1-grid.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:44:01.089166"
+  },
+  {
+    "_id": "6a1781dfc18489396b80b61e",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-05-27T23:44:31.942676"
+  },
+  {
+    "_id": "6a178249c18489396b80b61f",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:46:17.143306"
+  },
+  {
+    "_id": "6a17824fc18489396b80b620",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-05-27T23:46:23.541728"
+  },
+  {
+    "_id": "6a17830bc18489396b80b621",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-27T23:49:31.485911"
+  },
+  {
+    "_id": "6a178595c18489396b80b622",
+    "action": "zonewalk",
+    "detail": "1-grid.com",
+    "metadata": {
+      "domain": "1-grid.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T00:00:21.067638"
+  },
+  {
+    "_id": "6a1785a8c18489396b80b623",
+    "action": "zonewalk",
+    "detail": "1-grid.com",
+    "metadata": {
+      "domain": "1-grid.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T00:00:40.652461"
+  },
+  {
+    "_id": "6a1786b331485c85cdf9158e",
+    "action": "chat",
+    "detail": "1-grid.com",
+    "metadata": {
+      "msg": "1-grid.com email not working"
+    },
+    "timestamp": "2026-05-28T00:05:07.731282"
+  },
+  {
+    "_id": "6a17873731485c85cdf9158f",
+    "action": "chat",
+    "detail": "1-grid.com",
+    "metadata": {
+      "msg": "1-grid.com email not working"
+    },
+    "timestamp": "2026-05-28T00:07:19.977622"
+  },
+  {
+    "_id": "6a1787a831485c85cdf91590",
+    "action": "chat",
+    "detail": "test.com",
+    "metadata": {
+      "msg": "test.com email issue"
+    },
+    "timestamp": "2026-05-28T00:09:12.897166"
+  },
+  {
+    "_id": "6a17e67c31485c85cdf91591",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T06:53:48.429129"
+  },
+  {
+    "_id": "6a17e8d131485c85cdf91592",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:03:45.850227"
+  },
+  {
+    "_id": "6a17ecb00c24f599a8a637a9",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:20:16.147922"
+  },
+  {
+    "_id": "6a17f1fc22549ef873e13fd9",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:42:52.532442"
+  },
+  {
+    "_id": "6a17f24922549ef873e13fda",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:44:09.548609"
+  },
+  {
+    "_id": "6a17f2b244dffa8579a5db3a",
+    "action": "zonewalk",
+    "detail": "example.com",
+    "metadata": {
+      "domain": "example.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:45:54.600584"
+  },
+  {
+    "_id": "6a17f2d044dffa8579a5db3c",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:46:24.216196"
+  },
+  {
+    "_id": "6a17f32f176f593dc934275a",
+    "action": "zonewalk",
+    "detail": "google.com",
+    "metadata": {
+      "domain": "google.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:47:59.712215"
+  },
+  {
+    "_id": "6a17f3a8843e9f632530e642",
+    "action": "zonewalk",
+    "detail": "google.com",
+    "metadata": {
+      "domain": "google.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:50:00.810414"
+  },
+  {
+    "_id": "6a17f3cb843e9f632530e644",
+    "action": "zonewalk",
+    "detail": "google.com",
+    "metadata": {
+      "domain": "google.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:50:35.401850"
+  },
+  {
+    "_id": "6a17f3e2843e9f632530e646",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:50:58.736138"
+  },
+  {
+    "_id": "6a17f409843e9f632530e648",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:51:37.252214"
+  },
+  {
+    "_id": "6a17f424843e9f632530e64a",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-05-28T07:52:04.570318"
+  },
+  {
+    "_id": "6a17f50a85d10f2cf7284115",
+    "action": "zonewalk",
+    "detail": "google.com",
+    "metadata": {
+      "domain": "google.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:55:54.649088"
+  },
+  {
+    "_id": "6a17f52c85d10f2cf7284117",
+    "action": "zonewalk",
+    "detail": "google.com",
+    "metadata": {
+      "domain": "google.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:56:28.144110"
+  },
+  {
+    "_id": "6a17f5818eb2d54447d91ecc",
+    "action": "zonewalk",
+    "detail": "example.com",
+    "metadata": {
+      "domain": "example.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:57:53.852759"
+  },
+  {
+    "_id": "6a17f5a38eb2d54447d91ece",
+    "action": "zonewalk",
+    "detail": "example.com",
+    "metadata": {
+      "domain": "example.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:58:27.263589"
+  },
+  {
+    "_id": "6a17f5c78eb2d54447d91ed0",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:59:03.079070"
+  },
+  {
+    "_id": "6a17f5d28eb2d54447d91ed2",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T07:59:14.058073"
+  },
+  {
+    "_id": "6a17f8bf8eb2d54447d91ed4",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T08:11:43.269874"
+  },
+  {
+    "_id": "6a17f90e8eb2d54447d91ed6",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T08:13:02.443409"
+  },
+  {
+    "_id": "6a17fac68eb2d54447d91ed8",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T08:20:22.590422"
+  },
+  {
+    "_id": "6a17fae68eb2d54447d91eda",
+    "action": "zonewalk",
+    "detail": "google.com",
+    "metadata": {
+      "domain": "google.com",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T08:20:54.838626"
+  },
+  {
+    "_id": "6a17fb8cff7631876d5c5c78",
+    "action": "zonewalk",
+    "detail": "swiftiesgear.co.za",
+    "metadata": {
+      "domain": "swiftiesgear.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-28T08:23:40.547843"
+  },
+  {
+    "_id": "6a180602d2791d7e71bfae23",
+    "action": "chat",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "msg": "dev-robert.co.za ftp not working"
+    },
+    "timestamp": "2026-05-28T09:08:18.855914"
+  },
+  {
+    "_id": "6a18062dd2791d7e71bfae24",
+    "action": "chat",
+    "detail": "example.co.za",
+    "metadata": {
+      "msg": "example.co.za email not working"
+    },
+    "timestamp": "2026-05-28T09:09:01.133190"
+  },
+  {
+    "_id": "6a180649d2791d7e71bfae25",
+    "action": "chat",
+    "detail": "unknown",
+    "metadata": {
+      "msg": "/status"
+    },
+    "timestamp": "2026-05-28T09:09:29.533838"
+  },
+  {
+    "_id": "6a180658d2791d7e71bfae26",
+    "action": "chat",
+    "detail": "unknown",
+    "metadata": {
+      "msg": "/help"
+    },
+    "timestamp": "2026-05-28T09:09:44.368301"
+  },
+  {
+    "_id": "6a18079d1a328c6069d544d4",
+    "action": "chat",
+    "detail": "unknown",
+    "metadata": {
+      "msg": "/help"
+    },
+    "timestamp": "2026-05-28T09:15:09.372547"
+  },
+  {
+    "_id": "6a19991b70f464f7b327e636",
+    "action": "chat",
+    "detail": "test.com",
+    "metadata": {
+      "msg": "test.com email issue"
+    },
+    "timestamp": "2026-05-29T13:48:11.590994"
+  },
+  {
+    "_id": "6a19992370f464f7b327e637",
+    "action": "chat",
+    "detail": "test.com",
+    "metadata": {
+      "msg": "test.com email issue"
+    },
+    "timestamp": "2026-05-29T13:48:19.798959"
+  },
+  {
+    "_id": "6a1999de994747ed5bdf98b3",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T13:51:26.351662"
+  },
+  {
+    "_id": "6a1999e5994747ed5bdf98b5",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T13:51:33.139189"
+  },
+  {
+    "_id": "6a199a05994747ed5bdf98b7",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T13:52:05.170412"
+  },
+  {
+    "_id": "6a199a3a994747ed5bdf98b8",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-29T13:52:58.141737"
+  },
+  {
+    "_id": "6a199a77994747ed5bdf98bb",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T13:53:59.231160"
+  },
+  {
+    "_id": "6a199a89994747ed5bdf98bd",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T13:54:17.012520"
+  },
+  {
+    "_id": "6a199aae994747ed5bdf98bf",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T13:54:54.786558"
+  },
+  {
+    "_id": "6a199ad5994747ed5bdf98c1",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T13:55:33.015488"
+  },
+  {
+    "_id": "6a199c12bed8ba4d8e9f7828",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:00:50.288091"
+  },
+  {
+    "_id": "6a199c23bed8ba4d8e9f782a",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:01:07.475570"
+  },
+  {
+    "_id": "6a199c77bed8ba4d8e9f782c",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:02:31.002884"
+  },
+  {
+    "_id": "6a199c8abed8ba4d8e9f782e",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:02:50.320662"
+  },
+  {
+    "_id": "6a199d737cb04f33949f29f0",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:06:43.702106"
+  },
+  {
+    "_id": "6a199d9f7cb04f33949f29f2",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:07:27.898968"
+  },
+  {
+    "_id": "6a199e047cb04f33949f29f4",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:09:08.279044"
+  },
+  {
+    "_id": "6a199e1d7cb04f33949f29f6",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:09:33.371755"
+  },
+  {
+    "_id": "6a199e2f7cb04f33949f29f8",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:09:51.790226"
+  },
+  {
+    "_id": "6a199ef56301004dccaf3f47",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:13:09.323623"
+  },
+  {
+    "_id": "6a199f146301004dccaf3f49",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:13:40.060674"
+  },
+  {
+    "_id": "6a199f316301004dccaf3f4b",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:14:09.943185"
+  },
+  {
+    "_id": "6a199fd76301004dccaf3f4d",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:16:55.442835"
+  },
+  {
+    "_id": "6a199fe66301004dccaf3f4f",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:17:10.658410"
+  },
+  {
+    "_id": "6a19a0056301004dccaf3f51",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:17:41.008873"
+  },
+  {
+    "_id": "6a19a0356301004dccaf3f53",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:18:29.517021"
+  },
+  {
+    "_id": "6a19a04c6301004dccaf3f55",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:18:52.333490"
+  },
+  {
+    "_id": "6a19a0586301004dccaf3f57",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:19:04.163240"
+  },
+  {
+    "_id": "6a19a0696301004dccaf3f59",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:19:21.666710"
+  },
+  {
+    "_id": "6a19a0a06301004dccaf3f5b",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:20:16.274054"
+  },
+  {
+    "_id": "6a19a14c6301004dccaf3f5d",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:23:08.665045"
+  },
+  {
+    "_id": "6a19a2166301004dccaf3f5f",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:26:30.129186"
+  },
+  {
+    "_id": "6a19a2396301004dccaf3f61",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:27:05.597900"
+  },
+  {
+    "_id": "6a19a26c6301004dccaf3f63",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:27:56.114265"
+  },
+  {
+    "_id": "6a19a2aa6301004dccaf3f65",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:28:58.228470"
+  },
+  {
+    "_id": "6a19a2dc6301004dccaf3f67",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:29:48.074179"
+  },
+  {
+    "_id": "6a19a2e86301004dccaf3f69",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:30:00.429162"
+  },
+  {
+    "_id": "6a19a2f06301004dccaf3f6b",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:30:08.463330"
+  },
+  {
+    "_id": "6a19a2ff6301004dccaf3f6d",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:30:23.982596"
+  },
+  {
+    "_id": "6a19a31b6301004dccaf3f6f",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:30:51.187931"
+  },
+  {
+    "_id": "6a19a3276301004dccaf3f71",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T14:31:03.152964"
+  },
+  {
+    "_id": "6a19bddce4d994d48dba78d4",
+    "action": "chat",
+    "detail": "session=test_ai1",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:25:00.733383"
+  },
+  {
+    "_id": "6a19bde2e4d994d48dba78d6",
+    "action": "chat",
+    "detail": "session=test_ai2",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:25:06.353263"
+  },
+  {
+    "_id": "6a19be06e4d994d48dba78d8",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:25:42.540135"
+  },
+  {
+    "_id": "6a19be17e4d994d48dba78da",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:25:59.500379"
+  },
+  {
+    "_id": "6a19be29d576fe315c337ec4",
+    "action": "chat",
+    "detail": "session=log_test1",
+    "metadata": {
+      "domain": "example.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-29T16:26:17.373264"
+  },
+  {
+    "_id": "6a19be2dd576fe315c337ec6",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:26:21.262541"
+  },
+  {
+    "_id": "6a19be34d576fe315c337ec8",
+    "action": "chat",
+    "detail": "session=log_test2",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:26:28.748105"
+  },
+  {
+    "_id": "6a19c321d576fe315c337eca",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:47:29.704607"
+  },
+  {
+    "_id": "6a19c340d576fe315c337ecd",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-29T16:48:00.984226"
+  },
+  {
+    "_id": "6a19c359d576fe315c337ecf",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:48:25.887053"
+  },
+  {
+    "_id": "6a19c377d576fe315c337ed1",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:48:55.300090"
+  },
+  {
+    "_id": "6a19c380d576fe315c337ed3",
+    "action": "chat",
+    "detail": "session=sess_8e1x0fbkmpq",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:49:04.106531"
+  },
+  {
+    "_id": "6a19c56a8016227ab11fd596",
+    "action": "chat",
+    "detail": "session=sess_uol1qh7gmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-29T16:57:14.412866"
+  },
+  {
+    "_id": "6a1a66dd8016227ab11fd599",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "sefalana.co.bw",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T04:26:05.055157"
+  },
+  {
+    "_id": "6a1a67458016227ab11fd59a",
+    "action": "zonewalk",
+    "detail": "sefalana.co.bw",
+    "metadata": {
+      "domain": "sefalana.co.bw",
+      "deep": true
+    },
+    "timestamp": "2026-05-30T04:27:49.802264"
+  },
+  {
+    "_id": "6a1a70978016227ab11fd59e",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "lnxelk-master01.hostserv.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T05:07:35.358663"
+  },
+  {
+    "_id": "6a1a70a48016227ab11fd5a0",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:07:48.999509"
+  },
+  {
+    "_id": "6a1a70ba8016227ab11fd5a2",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:08:10.022436"
+  },
+  {
+    "_id": "6a1a7260f9de3d3450bc7149",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:15:12.668155"
+  },
+  {
+    "_id": "6a1a734ff9de3d3450bc714c",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "sefalana.co.bw",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T05:19:11.243023"
+  },
+  {
+    "_id": "6a1a7372f9de3d3450bc714e",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:19:46.711179"
+  },
+  {
+    "_id": "6a1a738bf9de3d3450bc7150",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:20:11.980941"
+  },
+  {
+    "_id": "6a1a739cf9de3d3450bc7152",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:20:28.681734"
+  },
+  {
+    "_id": "6a1a75d002e6e0c2a1dbefa1",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:29:52.494065"
+  },
+  {
+    "_id": "6a1a75ed02e6e0c2a1dbefa4",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "sefalana.co.bw",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T05:30:21.872505"
+  },
+  {
+    "_id": "6a1a77e4fc403e0b8a6cea03",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:38:44.402079"
+  },
+  {
+    "_id": "6a1a77ebfc403e0b8a6cea05",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:38:51.433961"
+  },
+  {
+    "_id": "6a1a77f3fc403e0b8a6cea07",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:38:59.563494"
+  },
+  {
+    "_id": "6a1a77fefc403e0b8a6cea09",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:39:10.573393"
+  },
+  {
+    "_id": "6a1a7811fc403e0b8a6cea0b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:39:29.872811"
+  },
+  {
+    "_id": "6a1a781cfc403e0b8a6cea0d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:39:40.567589"
+  },
+  {
+    "_id": "6a1a7829fc403e0b8a6cea0f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:39:53.437313"
+  },
+  {
+    "_id": "6a1a7847fc403e0b8a6cea11",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:40:23.647083"
+  },
+  {
+    "_id": "6a1a7857fc403e0b8a6cea13",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:40:39.942301"
+  },
+  {
+    "_id": "6a1a7862fc403e0b8a6cea15",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:40:50.321238"
+  },
+  {
+    "_id": "6a1a78affc403e0b8a6cea17",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:42:07.845608"
+  },
+  {
+    "_id": "6a1a78b4fc403e0b8a6cea19",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:42:12.719458"
+  },
+  {
+    "_id": "6a1a7aebfc403e0b8a6cea1b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:51:39.195941"
+  },
+  {
+    "_id": "6a1a7af8fc403e0b8a6cea1d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:51:52.091204"
+  },
+  {
+    "_id": "6a1a7b0ffc403e0b8a6cea1f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:52:15.640051"
+  },
+  {
+    "_id": "6a1a7b1ffc403e0b8a6cea21",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:52:31.190274"
+  },
+  {
+    "_id": "6a1a7b79fc403e0b8a6cea23",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:54:01.847403"
+  },
+  {
+    "_id": "6a1a7b97fc403e0b8a6cea25",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T05:54:31.263743"
+  },
+  {
+    "_id": "6a1a7bacfc403e0b8a6cea28",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "accentronix.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T05:54:52.852369"
+  },
+  {
+    "_id": "6a1a7c50fc403e0b8a6cea2b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "accentronix.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T05:57:36.219694"
+  },
+  {
+    "_id": "6a1a7ce7fc403e0b8a6cea2d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:00:07.174877"
+  },
+  {
+    "_id": "6a1a7cf6fc403e0b8a6cea2f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:00:22.006332"
+  },
+  {
+    "_id": "6a1a7d0afc403e0b8a6cea31",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:00:42.344708"
+  },
+  {
+    "_id": "6a1a7db639641d5f22137677",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "accentronix.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T06:03:34.560596"
+  },
+  {
+    "_id": "6a1a7e1139641d5f22137679",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:05:05.210804"
+  },
+  {
+    "_id": "6a1a7e1939641d5f2213767b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:05:13.505368"
+  },
+  {
+    "_id": "6a1a7e2839641d5f2213767d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:05:28.245072"
+  },
+  {
+    "_id": "6a1a7e2e39641d5f2213767f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:05:34.362168"
+  },
+  {
+    "_id": "6a1a7e3c39641d5f22137681",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:05:48.197653"
+  },
+  {
+    "_id": "6a1a7ed7b09b725168fe94d1",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:08:23.300142"
+  },
+  {
+    "_id": "6a1a7ee6b09b725168fe94d3",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:08:38.037931"
+  },
+  {
+    "_id": "6a1a7eebb09b725168fe94d5",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:08:43.924270"
+  },
+  {
+    "_id": "6a1a81acb09b725168fe94d7",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:20:28.192181"
+  },
+  {
+    "_id": "6a1a81bdb09b725168fe94d9",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:20:45.770411"
+  },
+  {
+    "_id": "6a1a81c8b09b725168fe94db",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:20:56.724617"
+  },
+  {
+    "_id": "6a1a81f2b09b725168fe94dd",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:21:38.260184"
+  },
+  {
+    "_id": "6a1a8238b09b725168fe94df",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:22:48.670031"
+  },
+  {
+    "_id": "6a1a825ab09b725168fe94e1",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:23:22.709737"
+  },
+  {
+    "_id": "6a1a8376b09b725168fe94e4",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "transformaction.com",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T06:28:06.354738"
+  },
+  {
+    "_id": "6a1a85deb09b725168fe94e6",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:38:22.351505"
+  },
+  {
+    "_id": "6a1a8623b09b725168fe94e8",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T06:39:31.270688"
+  },
+  {
+    "_id": "6a1a8a307c6af065fa18d2c6",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "outlook....no",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T06:56:48.731584"
+  },
+  {
+    "_id": "6a1a8a487c6af065fa18d2c9",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "powerlift.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T06:57:12.286663"
+  },
+  {
+    "_id": "6a1a8a627c6af065fa18d2cc",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "powerlift.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T06:57:38.606298"
+  },
+  {
+    "_id": "6a1a8fe636f662ee61293cc2",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T07:21:10.095494"
+  },
+  {
+    "_id": "6a1a9079c3b12dd29f144f23",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T07:23:37.794174"
+  },
+  {
+    "_id": "6a1a9175b09df7d9365ae902",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T07:27:49.229762"
+  },
+  {
+    "_id": "6a1a9187b09df7d9365ae904",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T07:28:07.954089"
+  },
+  {
+    "_id": "6a1a9198b09df7d9365ae906",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T07:28:24.031210"
+  },
+  {
+    "_id": "6a1a91e3b09df7d9365ae908",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T07:29:39.746704"
+  },
+  {
+    "_id": "6a1a91f1b09df7d9365ae90a",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T07:29:53.658384"
+  },
+  {
+    "_id": "6a1a9209b09df7d9365ae90c",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T07:30:17.453296"
+  },
+  {
+    "_id": "6a1a9235b09df7d9365ae90e",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T07:31:01.921495"
+  },
+  {
+    "_id": "6a1a92c8b09df7d9365ae910",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T07:33:28.139715"
+  },
+  {
+    "_id": "6a1a9a59b09df7d9365ae912",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:05:45.880987"
+  },
+  {
+    "_id": "6a1a9a75b09df7d9365ae914",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:06:13.238630"
+  },
+  {
+    "_id": "6a1a9a79b09df7d9365ae916",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:06:17.988723"
+  },
+  {
+    "_id": "6a1a9eb97ccc0466e86f6121",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:24:25.603422"
+  },
+  {
+    "_id": "6a1a9ecd7ccc0466e86f6123",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:24:45.787083"
+  },
+  {
+    "_id": "6a1a9fb07ccc0466e86f6125",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:28:32.147189"
+  },
+  {
+    "_id": "6a1a9fe07ccc0466e86f6127",
+    "action": "chat",
+    "detail": "session=test123",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:29:20.590096"
+  },
+  {
+    "_id": "6a1a9ff67ccc0466e86f6129",
+    "action": "chat",
+    "detail": "session=test123",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:29:42.285787"
+  },
+  {
+    "_id": "6a1aa025e3fcf9b767437a05",
+    "action": "chat",
+    "detail": "session=test456",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:30:29.639075"
+  },
+  {
+    "_id": "6a1aa030e3fcf9b767437a07",
+    "action": "chat",
+    "detail": "session=test",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:30:40.451203"
+  },
+  {
+    "_id": "6a1aa03de3fcf9b767437a09",
+    "action": "chat",
+    "detail": "session=test789",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:30:53.698504"
+  },
+  {
+    "_id": "6a1aa0825555e1b303fe5478",
+    "action": "chat",
+    "detail": "session=test999",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:32:02.844726"
+  },
+  {
+    "_id": "6a1aa0aa8d976d169a509e19",
+    "action": "chat",
+    "detail": "session=test999",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:32:42.793614"
+  },
+  {
+    "_id": "6a1aa0bd8d976d169a509e1b",
+    "action": "chat",
+    "detail": "session=curl_test",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:33:01.965437"
+  },
+  {
+    "_id": "6a1aa0c68d976d169a509e1d",
+    "action": "chat",
+    "detail": "session=curl_test2",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:33:10.176194"
+  },
+  {
+    "_id": "6a1aa0c78d976d169a509e1f",
+    "action": "chat",
+    "detail": "session=curl_test3",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:33:11.513830"
+  },
+  {
+    "_id": "6a1aa0cd8d976d169a509e21",
+    "action": "chat",
+    "detail": "session=curl_test4",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:33:17.326170"
+  },
+  {
+    "_id": "6a1aa0e7ac090906fef5b1a7",
+    "action": "chat",
+    "detail": "session=curl_log",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:33:43.788403"
+  },
+  {
+    "_id": "6a1aa11b016c3ee5e10114f7",
+    "action": "chat",
+    "detail": "session=curl_final2",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:34:35.942277"
+  },
+  {
+    "_id": "6a1aa199bcd984cf0c08cd68",
+    "action": "chat",
+    "detail": "session=dbg3",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:36:41.476591"
+  },
+  {
+    "_id": "6a1aa19fbcd984cf0c08cd6a",
+    "action": "chat",
+    "detail": "session=dbg4",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:36:47.423905"
+  },
+  {
+    "_id": "6a1aa1a7bcd984cf0c08cd6c",
+    "action": "chat",
+    "detail": "session=dbg5",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:36:55.705098"
+  },
+  {
+    "_id": "6a1aa1de76865a5146f07b8a",
+    "action": "chat",
+    "detail": "session=ft2",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T08:37:50.464046"
+  },
+  {
+    "_id": "6a1aa93776865a5146f07b8c",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:09:11.213846"
+  },
+  {
+    "_id": "6a1aa9843a5d82d4cc2e39c3",
+    "action": "chat",
+    "detail": "session=fix_test",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:10:28.163311"
+  },
+  {
+    "_id": "6a1aa9ea3a5d82d4cc2e39c5",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:12:10.099516"
+  },
+  {
+    "_id": "6a1aad973a5d82d4cc2e39c7",
+    "action": "chat",
+    "detail": "session=test422",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:27:51.125791"
+  },
+  {
+    "_id": "6a1aada43a5d82d4cc2e39c9",
+    "action": "chat",
+    "detail": "session=test422",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:28:04.137623"
+  },
+  {
+    "_id": "6a1aadba3a5d82d4cc2e39cb",
+    "action": "chat",
+    "detail": "session=test_noimg",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:28:26.107313"
+  },
+  {
+    "_id": "6a1aaddc3a5d82d4cc2e39cd",
+    "action": "chat",
+    "detail": "session=test1",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:29:00.437708"
+  },
+  {
+    "_id": "6a1aadde3a5d82d4cc2e39cf",
+    "action": "chat",
+    "detail": "session=test4",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:29:02.194393"
+  },
+  {
+    "_id": "6a1aade03a5d82d4cc2e39d1",
+    "action": "chat",
+    "detail": "session=test5",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:29:04.407314"
+  },
+  {
+    "_id": "6a1aade23a5d82d4cc2e39d3",
+    "action": "chat",
+    "detail": "session=test6",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:29:06.403791"
+  },
+  {
+    "_id": "6a1aadfa3a5d82d4cc2e39d5",
+    "action": "chat",
+    "detail": "session=realmsg",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:29:30.257855"
+  },
+  {
+    "_id": "6a1aae0a3a5d82d4cc2e39d7",
+    "action": "chat",
+    "detail": "session=noimgfield",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:29:46.921294"
+  },
+  {
+    "_id": "6a1ab1403a5d82d4cc2e39d9",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:43:28.753783"
+  },
+  {
+    "_id": "6a1ab14c3a5d82d4cc2e39db",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:43:40.188294"
+  },
+  {
+    "_id": "6a1ab1be006ccd15422a32e4",
+    "action": "chat",
+    "detail": "session=final_v2",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:45:34.384284"
+  },
+  {
+    "_id": "6a1ab1e1006ccd15422a32e6",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:46:09.379325"
+  },
+  {
+    "_id": "6a1ab1e9006ccd15422a32e8",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:46:17.434195"
+  },
+  {
+    "_id": "6a1ab205006ccd15422a32ea",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T09:46:45.515618"
+  },
+  {
+    "_id": "6a1ac5df006ccd15422a32ed",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "raathlaw.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T11:11:27.011803"
+  },
+  {
+    "_id": "6a1ac5ea006ccd15422a32ef",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T11:11:38.830373"
+  },
+  {
+    "_id": "6a1adb08006ccd15422a32f1",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:41:44.770480"
+  },
+  {
+    "_id": "6a1adb19006ccd15422a32f3",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:42:01.465860"
+  },
+  {
+    "_id": "6a1adb29006ccd15422a32f5",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:42:17.664909"
+  },
+  {
+    "_id": "6a1adb59006ccd15422a32f8",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "manndesigns.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T12:43:05.462944"
+  },
+  {
+    "_id": "6a1adb79006ccd15422a32fa",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:43:37.958144"
+  },
+  {
+    "_id": "6a1adbc7006ccd15422a32fc",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:44:55.167278"
+  },
+  {
+    "_id": "6a1adbcd006ccd15422a32fe",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:45:01.704930"
+  },
+  {
+    "_id": "6a1adbd7006ccd15422a3300",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:45:11.366545"
+  },
+  {
+    "_id": "6a1adbdd006ccd15422a3302",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:45:17.778136"
+  },
+  {
+    "_id": "6a1adbee006ccd15422a3304",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:45:34.801067"
+  },
+  {
+    "_id": "6a1adc03006ccd15422a3306",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:45:55.209461"
+  },
+  {
+    "_id": "6a1adc21006ccd15422a3307",
+    "action": "zonewalk",
+    "detail": "manndesigns.co.za",
+    "metadata": {
+      "domain": "manndesigns.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-05-30T12:46:25.163351"
+  },
+  {
+    "_id": "6a1adc5a006ccd15422a3309",
+    "action": "zonewalk",
+    "detail": "manndesigns.co.za",
+    "metadata": {
+      "domain": "manndesigns.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-05-30T12:47:22.093848"
+  },
+  {
+    "_id": "6a1adc64006ccd15422a330b",
+    "action": "zonewalk",
+    "detail": "manndesigns.co.za",
+    "metadata": {
+      "domain": "manndesigns.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-30T12:47:32.469654"
+  },
+  {
+    "_id": "6a1adc6b006ccd15422a330e",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:47:39.561615"
+  },
+  {
+    "_id": "6a1adcb2006ccd15422a3310",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:48:50.962160"
+  },
+  {
+    "_id": "6a1adcd5006ccd15422a3312",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:49:25.655711"
+  },
+  {
+    "_id": "6a1adcec006ccd15422a3314",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:49:48.534436"
+  },
+  {
+    "_id": "6a1add43006ccd15422a3316",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:51:15.346263"
+  },
+  {
+    "_id": "6a1add5a006ccd15422a3318",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T12:51:38.564660"
+  },
+  {
+    "_id": "6a1addda006ccd15422a3319",
+    "action": "zonewalk",
+    "detail": "manndesigns.co.za",
+    "metadata": {
+      "domain": "manndesigns.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-30T12:53:46.940373"
+  },
+  {
+    "_id": "6a1ae2e4006ccd15422a331c",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T13:15:16.409777"
+  },
+  {
+    "_id": "6a1ae2f7006ccd15422a331d",
+    "action": "zonewalk",
+    "detail": "http://antonsmitsculptures.co.za/",
+    "metadata": {
+      "domain": "http://antonsmitsculptures.co.za/",
+      "deep": false
+    },
+    "timestamp": "2026-05-30T13:15:35.670911"
+  },
+  {
+    "_id": "6a1ae315006ccd15422a331f",
+    "action": "zonewalk",
+    "detail": "antonsmitsculptures.co.za",
+    "metadata": {
+      "domain": "antonsmitsculptures.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-05-30T13:16:05.153314"
+  },
+  {
+    "_id": "6a1ae3a6006ccd15422a3324",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "antonsmitsculptures.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T13:18:30.539421"
+  },
+  {
+    "_id": "6a1ae9d0006ccd15422a3326",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T13:44:48.700536"
+  },
+  {
+    "_id": "6a1aea29006ccd15422a3328",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T13:46:17.009282"
+  },
+  {
+    "_id": "6a1aea65006ccd15422a332a",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T13:47:17.514420"
+  },
+  {
+    "_id": "6a1b0435006ccd15422a332c",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T15:37:25.487521"
+  },
+  {
+    "_id": "6a1b0dfc006ccd15422a332f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "aessystems.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-30T16:19:08.800254"
+  },
+  {
+    "_id": "6a1b0e30006ccd15422a3331",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-30T16:20:00.616416"
+  },
+  {
+    "_id": "6a1bc6dd006ccd15422a3333",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T05:27:57.173277"
+  },
+  {
+    "_id": "6a1bc6f9006ccd15422a3335",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T05:28:25.911835"
+  },
+  {
+    "_id": "6a1bc702006ccd15422a3337",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T05:28:34.838967"
+  },
+  {
+    "_id": "6a1bc70c006ccd15422a3339",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T05:28:44.891084"
+  },
+  {
+    "_id": "6a1bc71e006ccd15422a333b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T05:29:02.794546"
+  },
+  {
+    "_id": "6a1bd9b7006ccd15422a333d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T06:48:23.971497"
+  },
+  {
+    "_id": "6a1bd9bf006ccd15422a333f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T06:48:31.319407"
+  },
+  {
+    "_id": "6a1bd9cc006ccd15422a3341",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T06:48:44.925908"
+  },
+  {
+    "_id": "6a1bda0b006ccd15422a3343",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T06:49:47.401740"
+  },
+  {
+    "_id": "6a1bda2c006ccd15422a3345",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T06:50:20.314819"
+  },
+  {
+    "_id": "6a1bdabd006ccd15422a3347",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T06:52:45.636270"
+  },
+  {
+    "_id": "6a1bdad8006ccd15422a3349",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T06:53:12.932326"
+  },
+  {
+    "_id": "6a1bdfb0006ccd15422a334b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:13:52.497055"
+  },
+  {
+    "_id": "6a1be0d1006ccd15422a334d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:18:41.847074"
+  },
+  {
+    "_id": "6a1be0f2006ccd15422a334f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:19:14.677012"
+  },
+  {
+    "_id": "6a1be162006ccd15422a3351",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:21:06.933989"
+  },
+  {
+    "_id": "6a1be16c006ccd15422a3353",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:21:16.511419"
+  },
+  {
+    "_id": "6a1be179006ccd15422a3355",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:21:29.032094"
+  },
+  {
+    "_id": "6a1be18b006ccd15422a3357",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:21:47.529365"
+  },
+  {
+    "_id": "6a1be36f006ccd15422a3359",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:29:51.337930"
+  },
+  {
+    "_id": "6a1be37f006ccd15422a335b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:30:07.217751"
+  },
+  {
+    "_id": "6a1be383006ccd15422a335d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:30:11.737618"
+  },
+  {
+    "_id": "6a1be393006ccd15422a335f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:30:27.294462"
+  },
+  {
+    "_id": "6a1be718006ccd15422a3361",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:45:28.066572"
+  },
+  {
+    "_id": "6a1be72e006ccd15422a3364",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "purplemagnolia.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-31T07:45:50.916005"
+  },
+  {
+    "_id": "6a1be85c006ccd15422a3367",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "mail.comain",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-31T07:50:52.165756"
+  },
+  {
+    "_id": "6a1be872006ccd15422a336a",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "mail.domain",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-31T07:51:14.354320"
+  },
+  {
+    "_id": "6a1be88b006ccd15422a336d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "mail.purplemagnolia.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-31T07:51:39.436457"
+  },
+  {
+    "_id": "6a1be8d6006ccd15422a336f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T07:52:54.357323"
+  },
+  {
+    "_id": "6a1beff8006ccd15422a3371",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T08:23:20.794034"
+  },
+  {
+    "_id": "6a1bf013006ccd15422a3373",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T08:23:47.353438"
+  },
+  {
+    "_id": "6a1bf05f006ccd15422a3376",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "srv44.hostserv.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-31T08:25:03.472545"
+  },
+  {
+    "_id": "6a1bf082541b7a751082a66a",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T08:25:38.908117"
+  },
+  {
+    "_id": "6a1bfe8233e9882a7241de6b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "cwstationers23.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-31T09:25:22.559470"
+  },
+  {
+    "_id": "6a1c062e33e9882a7241de6d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T09:58:06.782837"
+  },
+  {
+    "_id": "6a1c124533e9882a7241de6f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T10:49:41.366872"
+  },
+  {
+    "_id": "6a1c134133e9882a7241de71",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T10:53:53.922956"
+  },
+  {
+    "_id": "6a1c136733e9882a7241de73",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T10:54:31.109704"
+  },
+  {
+    "_id": "6a1c13b633e9882a7241de75",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T10:55:50.589485"
+  },
+  {
+    "_id": "6a1c13d833e9882a7241de77",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T10:56:24.017304"
+  },
+  {
+    "_id": "6a1c1c3a33e9882a7241de79",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T11:32:10.673732"
+  },
+  {
+    "_id": "6a1c1c4b33e9882a7241de7b",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T11:32:27.910795"
+  },
+  {
+    "_id": "6a1c298133e9882a7241de7d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:28:49.962757"
+  },
+  {
+    "_id": "6a1c29a733e9882a7241de7f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:29:27.311977"
+  },
+  {
+    "_id": "6a1c29b033e9882a7241de81",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:29:36.780310"
+  },
+  {
+    "_id": "6a1c29bc33e9882a7241de83",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:29:48.725967"
+  },
+  {
+    "_id": "6a1c29cf33e9882a7241de85",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:30:07.775923"
+  },
+  {
+    "_id": "6a1c29dc33e9882a7241de87",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:30:20.134919"
+  },
+  {
+    "_id": "6a1c29ee33e9882a7241de89",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:30:38.162564"
+  },
+  {
+    "_id": "6a1c2a3b33e9882a7241de8b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:31:55.986616"
+  },
+  {
+    "_id": "6a1c2af23a6e791034b70621",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:34:58.389252"
+  },
+  {
+    "_id": "6a1c2b0e3a6e791034b70623",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:35:26.289647"
+  },
+  {
+    "_id": "6a1c2b183a6e791034b70625",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:35:36.887435"
+  },
+  {
+    "_id": "6a1c2b223a6e791034b70627",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:35:46.688975"
+  },
+  {
+    "_id": "6a1c2b2d3a6e791034b70629",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:35:57.149431"
+  },
+  {
+    "_id": "6a1c2b543a6e791034b7062c",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "epicbusiness.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-31T12:36:36.415002"
+  },
+  {
+    "_id": "6a1c2b693a6e791034b7062e",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:36:57.195388"
+  },
+  {
+    "_id": "6a1c2b8b3a6e791034b70630",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:37:31.580113"
+  },
+  {
+    "_id": "6a1c2b9c3a6e791034b70632",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:37:48.556717"
+  },
+  {
+    "_id": "6a1c2bbf3a6e791034b70635",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "srv11.hostserv.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-05-31T12:38:23.509462"
+  },
+  {
+    "_id": "6a1c2c989c2b21aa568df9b6",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:42:00.634632"
+  },
+  {
+    "_id": "6a1c2cac9c2b21aa568df9b8",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:42:20.553649"
+  },
+  {
+    "_id": "6a1c2cbb9c2b21aa568df9ba",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:42:35.278308"
+  },
+  {
+    "_id": "6a1c2cc89c2b21aa568df9bc",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:42:48.916036"
+  },
+  {
+    "_id": "6a1c2ce19c2b21aa568df9be",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:43:13.616611"
+  },
+  {
+    "_id": "6a1c2d87567642df21912cb3",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:45:59.845192"
+  },
+  {
+    "_id": "6a1c2da1567642df21912cb5",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:46:25.408494"
+  },
+  {
+    "_id": "6a1c2ef1fde62abc4911dee4",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:52:01.005408"
+  },
+  {
+    "_id": "6a1c2f54fde62abc4911dee6",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:53:40.598063"
+  },
+  {
+    "_id": "6a1c2f5cfde62abc4911dee8",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T12:53:48.936441"
+  },
+  {
+    "_id": "6a1c30e2f7fbe243822a9921",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:00:18.550099"
+  },
+  {
+    "_id": "6a1c30f7f7fbe243822a9923",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:00:39.148594"
+  },
+  {
+    "_id": "6a1c3107f7fbe243822a9925",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:00:55.853164"
+  },
+  {
+    "_id": "6a1c3110f7fbe243822a9927",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:01:04.835205"
+  },
+  {
+    "_id": "6a1c3126f7fbe243822a9929",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:01:26.332962"
+  },
+  {
+    "_id": "6a1c313cf7fbe243822a992b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:01:48.588801"
+  },
+  {
+    "_id": "6a1c323fd7a2e1d78bbb4b6b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:06:07.581897"
+  },
+  {
+    "_id": "6a1c3259d7a2e1d78bbb4b6d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:06:33.156746"
+  },
+  {
+    "_id": "6a1c326cd7a2e1d78bbb4b6f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:06:52.851970"
+  },
+  {
+    "_id": "6a1c3952d7a2e1d78bbb4b71",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:36:18.039114"
+  },
+  {
+    "_id": "6a1c3995d7a2e1d78bbb4b73",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:37:25.840844"
+  },
+  {
+    "_id": "6a1c39aad7a2e1d78bbb4b75",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:37:46.065331"
+  },
+  {
+    "_id": "6a1c39c8d7a2e1d78bbb4b77",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:38:16.432812"
+  },
+  {
+    "_id": "6a1c3a2dd7a2e1d78bbb4b79",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:39:57.550918"
+  },
+  {
+    "_id": "6a1c3a56d7a2e1d78bbb4b7b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:40:38.799672"
+  },
+  {
+    "_id": "6a1c3ae6d7a2e1d78bbb4b7d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:43:02.687360"
+  },
+  {
+    "_id": "6a1c3aefd7a2e1d78bbb4b7f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:43:11.105169"
+  },
+  {
+    "_id": "6a1c3afcd7a2e1d78bbb4b81",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:43:24.868779"
+  },
+  {
+    "_id": "6a1c3b2cd7a2e1d78bbb4b83",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:44:12.781511"
+  },
+  {
+    "_id": "6a1c3b43d7a2e1d78bbb4b85",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:44:35.593070"
+  },
+  {
+    "_id": "6a1c3b5ad7a2e1d78bbb4b87",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:44:58.734772"
+  },
+  {
+    "_id": "6a1c3b67d7a2e1d78bbb4b89",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T13:45:11.422656"
+  },
+  {
+    "_id": "6a1c43aed7a2e1d78bbb4b8b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:20:30.792465"
+  },
+  {
+    "_id": "6a1c4416d7a2e1d78bbb4b8d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:22:14.341506"
+  },
+  {
+    "_id": "6a1c479fd7a2e1d78bbb4b8f",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:37:19.473632"
+  },
+  {
+    "_id": "6a1c47cbd7a2e1d78bbb4b91",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:38:03.113277"
+  },
+  {
+    "_id": "6a1c47ecd7a2e1d78bbb4b93",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:38:36.782663"
+  },
+  {
+    "_id": "6a1c480dd7a2e1d78bbb4b95",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:39:09.544962"
+  },
+  {
+    "_id": "6a1c4819d7a2e1d78bbb4b97",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:39:21.822142"
+  },
+  {
+    "_id": "6a1c4828d7a2e1d78bbb4b99",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:39:36.412764"
+  },
+  {
+    "_id": "6a1c4aadd7a2e1d78bbb4b9b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:50:21.388302"
+  },
+  {
+    "_id": "6a1c4abcd7a2e1d78bbb4b9d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:50:36.663983"
+  },
+  {
+    "_id": "6a1c4adfd7a2e1d78bbb4b9f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-05-31T14:51:11.666931"
+  },
+  {
+    "_id": "6a1e67c1d7a2e1d78bbb4ba1",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T05:18:57.459296"
+  },
+  {
+    "_id": "6a1e6890d7a2e1d78bbb4ba2",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:22:24.732522"
+  },
+  {
+    "_id": "6a1e6898d7a2e1d78bbb4ba4",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:22:32.783615"
+  },
+  {
+    "_id": "6a1e689ed7a2e1d78bbb4ba6",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T05:22:38.022914"
+  },
+  {
+    "_id": "6a1e68d2d7a2e1d78bbb4baa",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-06-02T05:23:30.172105"
+  },
+  {
+    "_id": "6a1e68ffd7a2e1d78bbb4bab",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:24:15.387216"
+  },
+  {
+    "_id": "6a1e694cf4c2fe852fc59504",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:25:32.197217"
+  },
+  {
+    "_id": "6a1e697f06d7deff94cdb83d",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:26:23.917078"
+  },
+  {
+    "_id": "6a1e69b206d7deff94cdb83f",
+    "action": "zonewalk",
+    "detail": "dev-robert.co.za",
+    "metadata": {
+      "domain": "dev-robert.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:27:14.951806"
+  },
+  {
+    "_id": "6a1e69f706d7deff94cdb841",
+    "action": "zonewalk",
+    "detail": "Purify1.co.za",
+    "metadata": {
+      "domain": "Purify1.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:28:23.594103"
+  },
+  {
+    "_id": "6a1e6a1c06d7deff94cdb843",
+    "action": "zonewalk",
+    "detail": "Purify1.co.za",
+    "metadata": {
+      "domain": "Purify1.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T05:29:00.175233"
+  },
+  {
+    "_id": "6a1e6b7706d7deff94cdb845",
+    "action": "zonewalk",
+    "detail": "bmsafricasa.co.za ",
+    "metadata": {
+      "domain": "bmsafricasa.co.za ",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T05:34:47.086451"
+  },
+  {
+    "_id": "6a1e6bcb06d7deff94cdb848",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T05:36:11.916653"
+  },
+  {
+    "_id": "6a1e6bdc06d7deff94cdb84a",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T05:36:28.944592"
+  },
+  {
+    "_id": "6a1e6c0706d7deff94cdb84c",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T05:37:11.198517"
+  },
+  {
+    "_id": "6a1e6c1206d7deff94cdb84e",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T05:37:22.219471"
+  },
+  {
+    "_id": "6a1e6cf406d7deff94cdb84f",
+    "action": "zonewalk",
+    "detail": " alu-scaff.co.za",
+    "metadata": {
+      "domain": " alu-scaff.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:41:08.348084"
+  },
+  {
+    "_id": "6a1e6d0506d7deff94cdb851",
+    "action": "zonewalk",
+    "detail": " alu-scaff.co.za",
+    "metadata": {
+      "domain": " alu-scaff.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T05:41:25.157304"
+  },
+  {
+    "_id": "6a1e6d1806d7deff94cdb853",
+    "action": "zonewalk",
+    "detail": "bmsafricasa.co.za .why do you think this client cant acess their domain and webmail is it because the nameservers are not correct this is a linux hosting medium package and these are the nameservers ns1.hostserv.co.za",
+    "metadata": {
+      "domain": "bmsafricasa.co.za .why do you think this client cant acess their domain and webmail is it because the nameservers are not correct this is a linux hosting medium package and these are the nameservers ns1.hostserv.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T05:41:44.821861"
+  },
+  {
+    "_id": "6a1e6d2206d7deff94cdb855",
+    "action": "zonewalk",
+    "detail": "bmsafricasa.co.za .why do you think this client cant acess their domain and webmail is it because the nameservers are not correct this is a linux hosting medium package and these are the nameservers ns1.hostserv.co.za",
+    "metadata": {
+      "domain": "bmsafricasa.co.za .why do you think this client cant acess their domain and webmail is it because the nameservers are not correct this is a linux hosting medium package and these are the nameservers ns1.hostserv.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:41:54.454570"
+  },
+  {
+    "_id": "6a1e6d5f06d7deff94cdb857",
+    "action": "zonewalk",
+    "detail": "bmsafricasa.co.za ",
+    "metadata": {
+      "domain": "bmsafricasa.co.za ",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:42:55.700105"
+  },
+  {
+    "_id": "6a1e6d6906d7deff94cdb859",
+    "action": "zonewalk",
+    "detail": "bmsafricasa.co.za ",
+    "metadata": {
+      "domain": "bmsafricasa.co.za ",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T05:43:05.075918"
+  },
+  {
+    "_id": "6a1e6d6f06d7deff94cdb85d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "alu-scaff.co.za",
+      "actions": [
+        "zonewalk",
+        "kb_search",
+        "history_check",
+        "ai_analysis"
+      ]
+    },
+    "timestamp": "2026-06-02T05:43:11.670304"
+  },
+  {
+    "_id": "6a1e6d7f06d7deff94cdb85e",
+    "action": "zonewalk",
+    "detail": "alu-scaff.co.za",
+    "metadata": {
+      "domain": "alu-scaff.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:43:27.746621"
+  },
+  {
+    "_id": "6a1e6e2135d901a8b051df46",
+    "action": "zonewalk",
+    "detail": "alu-scaff.co.za",
+    "metadata": {
+      "domain": "alu-scaff.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T05:46:09.478783"
+  },
+  {
+    "_id": "6a1e6ea835d901a8b051df49",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T05:48:24.520207"
+  },
+  {
+    "_id": "6a1e6eae35d901a8b051df4b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T05:48:30.011725"
+  },
+  {
+    "_id": "6a1e6eb735d901a8b051df4d",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T05:48:39.719940"
+  },
+  {
+    "_id": "6a1e6ec335d901a8b051df4f",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T05:48:51.941829"
+  },
+  {
+    "_id": "6a1e70e435d901a8b051df50",
+    "action": "zonewalk",
+    "detail": "spatialinformationservices.co.za",
+    "metadata": {
+      "domain": "spatialinformationservices.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T05:57:56.150496"
+  },
+  {
+    "_id": "6a1e781935d901a8b051df52",
+    "action": "zonewalk",
+    "detail": "step-ahead.co.za",
+    "metadata": {
+      "domain": "step-ahead.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T06:28:41.874608"
+  },
+  {
+    "_id": "6a1e783935d901a8b051df54",
+    "action": "zonewalk",
+    "detail": "step-ahead.co.za",
+    "metadata": {
+      "domain": "step-ahead.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T06:29:13.041380"
+  },
+  {
+    "_id": "6a1e785935d901a8b051df56",
+    "action": "zonewalk",
+    "detail": "step-ahead.co.za",
+    "metadata": {
+      "domain": "step-ahead.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T06:29:45.019056"
+  },
+  {
+    "_id": "6a1e790635d901a8b051df59",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T06:32:38.103267"
+  },
+  {
+    "_id": "6a1e79f535d901a8b051df5a",
+    "action": "zonewalk",
+    "detail": "solarco.co.za",
+    "metadata": {
+      "domain": "solarco.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T06:36:37.341715"
+  },
+  {
+    "_id": "6a1e7a0c35d901a8b051df5c",
+    "action": "zonewalk",
+    "detail": "solarco.co.za",
+    "metadata": {
+      "domain": "solarco.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T06:37:00.967698"
+  },
+  {
+    "_id": "6a1e7a9435d901a8b051df5e",
+    "action": "zonewalk",
+    "detail": "step-ahead.co.za",
+    "metadata": {
+      "domain": "step-ahead.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T06:39:16.331489"
+  },
+  {
+    "_id": "6a1e7e6a35d901a8b051df60",
+    "action": "zonewalk",
+    "detail": "41.185.8.219",
+    "metadata": {
+      "domain": "41.185.8.219",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T06:55:38.642783"
+  },
+  {
+    "_id": "6a1e7e7d35d901a8b051df62",
+    "action": "zonewalk",
+    "detail": "ashweb.co.za",
+    "metadata": {
+      "domain": "ashweb.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T06:55:57.527431"
+  },
+  {
+    "_id": "6a1e7e8835d901a8b051df64",
+    "action": "zonewalk",
+    "detail": "41.185.8.219",
+    "metadata": {
+      "domain": "41.185.8.219",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T06:56:08.392865"
+  },
+  {
+    "_id": "6a1e826235d901a8b051df66",
+    "action": "zonewalk",
+    "detail": "prospectp.co.za",
+    "metadata": {
+      "domain": "prospectp.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T07:12:34.873176"
+  },
+  {
+    "_id": "6a1e826e35d901a8b051df68",
+    "action": "zonewalk",
+    "detail": "prospectp.co.za",
+    "metadata": {
+      "domain": "prospectp.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T07:12:46.419077"
+  },
+  {
+    "_id": "6a1e827535d901a8b051df6b",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T07:12:53.827784"
+  },
+  {
+    "_id": "6a1e8d2735d901a8b051df6d",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T07:58:31.817076"
+  },
+  {
+    "_id": "6a1e8d3c35d901a8b051df6f",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T07:58:52.944539"
+  },
+  {
+    "_id": "6a1e8de635d901a8b051df71",
+    "action": "zonewalk",
+    "detail": "builddirect.co.za",
+    "metadata": {
+      "domain": "builddirect.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T08:01:42.373040"
+  },
+  {
+    "_id": "6a1e8ed535d901a8b051df73",
+    "action": "zonewalk",
+    "detail": "builddirect.co.za",
+    "metadata": {
+      "domain": "builddirect.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T08:05:41.097031"
+  },
+  {
+    "_id": "6a1e936f35d901a8b051df76",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T08:25:19.397310"
+  },
+  {
+    "_id": "6a1e938a35d901a8b051df78",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T08:25:46.179545"
+  },
+  {
+    "_id": "6a1e939335d901a8b051df7a",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T08:25:55.219393"
+  },
+  {
+    "_id": "6a1e93ab35d901a8b051df7b",
+    "action": "zonewalk",
+    "detail": "isp247.co.za",
+    "metadata": {
+      "domain": "isp247.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T08:26:19.201159"
+  },
+  {
+    "_id": "6a1e93d635d901a8b051df7d",
+    "action": "zonewalk",
+    "detail": "isp247.co.za",
+    "metadata": {
+      "domain": "isp247.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T08:27:02.376633"
+  },
+  {
+    "_id": "6a1e93e335d901a8b051df7f",
+    "action": "zonewalk",
+    "detail": "isp247.co.za",
+    "metadata": {
+      "domain": "isp247.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T08:27:15.888541"
+  },
+  {
+    "_id": "6a1ea62f35d901a8b051df81",
+    "action": "zonewalk",
+    "detail": "matadvice.com",
+    "metadata": {
+      "domain": "matadvice.com",
+      "deep": true
+    },
+    "timestamp": "2026-06-02T09:45:19.133187"
+  },
+  {
+    "_id": "6a1ea67f35d901a8b051df84",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T09:46:39.510809"
+  },
+  {
+    "_id": "6a1eca6735d901a8b051df85",
+    "action": "zonewalk",
+    "detail": "accolade-consulting.co.za",
+    "metadata": {
+      "domain": "accolade-consulting.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-02T12:19:51.445976"
+  },
+  {
+    "_id": "6a1ed4f635d901a8b051df88",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T13:04:54.678789"
+  },
+  {
+    "_id": "6a1ed51135d901a8b051df8a",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T13:05:21.833347"
+  },
+  {
+    "_id": "6a1ed51e35d901a8b051df8c",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T13:05:34.859454"
+  },
+  {
+    "_id": "6a1ed56d35d901a8b051df8e",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T13:06:53.320247"
+  },
+  {
+    "_id": "6a1ed57935d901a8b051df90",
+    "action": "chat",
+    "detail": "session=sess_hpild95zmpr",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-02T13:07:05.468122"
+  },
+  {
+    "_id": "6a1fc3d937cb72a66f0b76f6",
+    "action": "zonewalk",
+    "detail": " Prelovedballs.com",
+    "metadata": {
+      "domain": " Prelovedballs.com",
+      "deep": true
+    },
+    "timestamp": "2026-06-03T06:04:09.471539"
+  },
+  {
+    "_id": "6a2009db37cb72a66f0b76f9",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-03T11:02:51.892370"
+  },
+  {
+    "_id": "6a200a1b37cb72a66f0b76fb",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-03T11:03:55.907291"
+  },
+  {
+    "_id": "6a200a2437cb72a66f0b76fd",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-03T11:04:04.424154"
+  },
+  {
+    "_id": "6a200a3137cb72a66f0b76ff",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-03T11:04:17.161208"
+  },
+  {
+    "_id": "6a200a3537cb72a66f0b7701",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-03T11:04:21.607420"
+  },
+  {
+    "_id": "6a200a4737cb72a66f0b7703",
+    "action": "chat",
+    "detail": "session=sess_9dfn7c95mpt",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-03T11:04:39.291409"
+  },
+  {
+    "_id": "6a23137d0302b4ab7e1d0495",
+    "action": "chat",
+    "detail": "session=sess_zl7pw04impz",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-05T18:20:45.410831"
+  },
+  {
+    "_id": "6a23cbd03c461a7b8b06e2e6",
+    "action": "ticket_resolved",
+    "detail": "2706186 - ZAW4 server down - server back online after brief outage, stable 8+ hours",
+    "metadata": {
+      "ticket": "2706186",
+      "domain": "zaw4",
+      "client": "Justin Walker / ZAWebs",
+      "server": "zaw4",
+      "action": "server restored, monitoring confirmed stable",
+      "status": "resolved",
+      "priority": "premier",
+      "timestamp": "2026-06-06T07:27:12.284073"
+    },
+    "timestamp": "2026-06-06T07:27:12.284094"
+  },
+  {
+    "_id": "6a23cfe62a5db6c4cccbf37b",
+    "action": "session_summary",
+    "detail": "Ticket work completed 6 Jun 2026",
+    "metadata": {
+      "date": "2026-06-06T07:44:38.981285",
+      "tickets_handled": [
+        "2706186 - ZAW4 server down - resolved, brief outage, moved to Proxmox",
+        "2704242 - spectill.co.za unsuspended",
+        "2701846 - lms.doesitwork.co.za PDO MySQL fixed (alt-php80 -> ea-php80)",
+        "2706102 - msfarm.co.za IP whitelisting (CSF)",
+        "2702520 - thefireflyinnovations.com - manual backup guidance",
+        "2705847 - mailchampionscup.co.za - domain not registered",
+        "2705978 - phangisaloans.co.za - mailbox repair (doveadm force-resync)",
+        "2706061 - beachandbeyond.co.za - emails missing, investigated",
+        "2706132 - jbrauns.co.za - no archive found (cancelled > 3 months)",
+        "2706173 - lubanyi.co.za - email delivery failure, investigated",
+        "2705670 - Susan Rawstorne - queried backups/backfiles",
+        "2705764 - mtkcorp.org.za - mail sync needed on srv45",
+        "2705850 - decisionvex.com - FTP 530 due to MaxLoad, alternative suggested",
+        "2706223 - akutrax.com scammer - domain blocked",
+        "2705016 - miyaselectrical.co.za - missing emails investigated",
+        "2706088 - cherrylounge.co.za - outgoing mail suspended, unsuspended",
+        "2701144 - michellyrall.com - draft response saved",
+        "2706132 - jbrauns.co.za - restore declined, archive deleted"
+      ],
+      "timestamp": "2026-06-06T07:44:38.981303"
+    },
+    "timestamp": "2026-06-06T07:44:38.981312"
+  },
+  {
+    "_id": "6a2412a0c765b7f3b730f8ee",
+    "action": "session_complete",
+    "detail": "Full session summary 6 Jun 2026",
+    "metadata": {
+      "session_id": "db0f6c48-63a8-48",
+      "date": "2026-06-06T12:29:20.367350",
+      "summary": {
+        "tickets_resolved": [
+          "2706186 - ZAW4 server down - brief outage, moved to Proxmox, client informed and acknowledged",
+          "2704242 - spectill.co.za unsuspended on srv115, client notified",
+          "2701846 - lms.doesitwork.co.za PDO MySQL driver fixed (alt-php80 -> ea-php80 .htaccess on srv68)",
+          "2706102 - msfarm.co.za / millvale.co.za IPs whitelisted in CSF on srv145",
+          "2705850 - decisionvex.com FTP 530 identified as MaxLoad limit on srv108, Web Disk suggested",
+          "2706223 - akutrax.com scammer domain blocked, client notified",
+          "2706088 - cherrylounge.co.za outgoing mail unsuspended",
+          "2706132 - jbrauns.co.za no archive found (cancelled >3 months ago)",
+          "2705847 - mailchampionscup.co.za domain not registered, advised client"
+        ],
+        "tickets_ongoing": [
+          "2702520 - thefireflyinnovations.com - docroots identified for Johann, backup request out of scope",
+          "2705978 - phangisaloans.co.za - IMAP repaired (doveadm force-resync), webmail issue stil pending",
+          "2706061 - beachandbeyond.co.za - emails missing, needs storage sync",
+          "2705016 - miyaselectrical.co.za - missing emails on srv80, needs investigation",
+          "2706173 - lubanyi.co.za - email delivery failure on winsvrweb03",
+          "2705670 - Susan Rawstorne - pending domain details",
+          "2705764 - mtkcorp.org.za - mail sync needed on srv45",
+          "2705787 - dinahmorguesthouse.co.za - serverHold, needs domain verification",
+          "2701144 - michellyrall.com - draft saved, waiting on client/Dieter",
+          "2705349 - crystalaire.co.za - waiting bounce headers",
+          "2705354 - domain transfers - waiting EPP codes",
+          "2701330 - ashweb.co.za (Webster) - reinstatement decision pending",
+          "COM200-WIN25 - firewall locked - needs hypervisor console"
+        ],
+        "server_issues": [
+          "agx92-cvps01 (41.185.65.32) - down after reboot, only port 443 responding, possible boot issue"
+        ]
+      },
+      "timestamp": "2026-06-06T12:29:20.367371"
+    },
+    "timestamp": "2026-06-06T12:29:20.367383"
+  },
+  {
+    "_id": "6a251aef5991d1a9fc6b84cf",
+    "action": "ticket_resolved",
+    "detail": "2705016 - miyaselectrical.co.za missing emails fixed",
+    "metadata": {
+      "ticket": "2705016",
+      "domain": "miyaselectrical.co.za",
+      "server": "srv80 (41.185.8.152)",
+      "cpanel_user": "nts231",
+      "accounts_affected": [
+        "alvin@miyaselectrical.co.za",
+        "ernest@miyaselectrical.co.za",
+        "admin@miyaselectrical.co.za"
+      ],
+      "issue": "Emails prior to 2 March 2026 not showing in IMAP/Outlook. 31GB of mail data still on disk.",
+      "root_cause": "Dovecot index corruption (Trash and Drafts folders had invalid UID entries in dovecot.index)",
+      "steps_taken": [
+        "1. Identified cPanel account: nts231 on srv80",
+        "2. Checked maildir size: 31GB total (alvin 2.5GB, ernest 21GB, admin 7.6GB) \u2014 emails physically present",
+        "3. Ran doveadm force-resync and doveadm index on all three accounts (alvin, ernest, admin)",
+        "4. Dovecot reported: \"Log synchronization error at seq=4,offset=236 - Extension record update for invalid uid=1\"",
+        "5. Dovecot auto-fscked and repaired Trash and Drafts index files",
+        "6. Verified repair: alvin=6544 msgs, ernest=64788 msgs, admin=10576 msgs \u2014 all intact"
+      ],
+      "result": "Index corruption repaired. All emails restored and visible.",
+      "recommendation": "Client to verify from webmail (Roundcube) and confirm if history/archived folders also need resync",
+      "timestamp": "2026-06-07T07:17:03.547928"
+    },
+    "timestamp": "2026-06-07T07:17:03.547955"
+  },
+  {
+    "_id": "6a251d190302b4ab7e1d0496",
+    "action": "zonewalk",
+    "detail": "itdev.co.za",
+    "metadata": {
+      "domain": "itdev.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-06-07T07:26:17.699921"
+  },
+  {
+    "_id": "6a251d540302b4ab7e1d0498",
+    "action": "zonewalk",
+    "detail": "itdev.co.za",
+    "metadata": {
+      "domain": "itdev.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-07T07:27:16.496263"
+  },
+  {
+    "_id": "6a251d960302b4ab7e1d049a",
+    "action": "zonewalk",
+    "detail": "itdev.co.za",
+    "metadata": {
+      "domain": "itdev.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-07T07:28:22.195695"
+  },
+  {
+    "_id": "6a2530a5b672076c02260e6e",
+    "action": "zonewalk",
+    "detail": "lifecoaching4u.co.za",
+    "metadata": {
+      "domain": "lifecoaching4u.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-07T08:49:41.730438"
+  },
+  {
+    "_id": "6a253182103df9b431e1e816",
+    "action": "zonewalk",
+    "detail": "quayside.co.za",
+    "metadata": {
+      "domain": "quayside.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-07T08:53:22.243973"
+  },
+  {
+    "_id": "6a2531aa103df9b431e1e818",
+    "action": "zonewalk",
+    "detail": "quayside.co.za",
+    "metadata": {
+      "domain": "quayside.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-07T08:54:02.493502"
+  },
+  {
+    "_id": "6a2531d0103df9b431e1e81a",
+    "action": "zonewalk",
+    "detail": "quayside.co.za",
+    "metadata": {
+      "domain": "quayside.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-07T08:54:40.917097"
+  },
+  {
+    "_id": "6a2531de103df9b431e1e81c",
+    "action": "zonewalk",
+    "detail": "lifecoaching4u.co.za",
+    "metadata": {
+      "domain": "lifecoaching4u.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-07T08:54:54.404638"
+  },
+  {
+    "_id": "6a2531f5cd5e78a8041d255c",
+    "action": "zonewalk",
+    "detail": "lifecoaching4u.co.za",
+    "metadata": {
+      "domain": "lifecoaching4u.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-07T08:55:17.681965"
+  },
+  {
+    "_id": "6a25321bcd5e78a8041d255e",
+    "action": "zonewalk",
+    "detail": "quayside.co.za",
+    "metadata": {
+      "domain": "quayside.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-07T08:55:55.882635"
+  },
+  {
+    "_id": "6a2577accd5e78a8041d2560",
+    "action": "zonewalk",
+    "detail": "mploy.online",
+    "metadata": {
+      "domain": "mploy.online",
+      "deep": false
+    },
+    "timestamp": "2026-06-07T13:52:44.261127"
+  },
+  {
+    "_id": "6a257938cd5e78a8041d2562",
+    "action": "zonewalk",
+    "detail": "mploy.online",
+    "metadata": {
+      "domain": "mploy.online",
+      "deep": true
+    },
+    "timestamp": "2026-06-07T13:59:20.158543"
+  },
+  {
+    "_id": "6a257b99cd5e78a8041d2564",
+    "action": "zonewalk",
+    "detail": "malirair.co.za",
+    "metadata": {
+      "domain": "malirair.co.za",
+      "deep": true
+    },
+    "timestamp": "2026-06-07T14:09:29.043709"
+  },
+  {
+    "_id": "6a26add1cd5e78a8041d2567",
+    "action": "chat",
+    "detail": "session=sess_agniz1fsmq5",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-08T11:56:01.093700"
+  },
+  {
+    "_id": "6a26ae02cd5e78a8041d2569",
+    "action": "chat",
+    "detail": "session=sess_agniz1fsmq5",
+    "metadata": {
+      "domain": "",
+      "actions": [
+        "ai_chat"
+      ]
+    },
+    "timestamp": "2026-06-08T11:56:50.846904"
+  },
+  {
+    "_id": "6a26ae98cd5e78a8041d256a",
+    "action": "zonewalk",
+    "detail": "backup-server.co.za",
+    "metadata": {
+      "domain": "backup-server.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-08T11:59:20.261527"
+  },
+  {
+    "_id": "6a26aeeecd5e78a8041d256c",
+    "action": "zonewalk",
+    "detail": "ab-solutions.co.za",
+    "metadata": {
+      "domain": "ab-solutions.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-08T12:00:46.354635"
+  },
+  {
+    "_id": "6a26af32cd5e78a8041d256e",
+    "action": "zonewalk",
+    "detail": "regatta.co.za",
+    "metadata": {
+      "domain": "regatta.co.za",
+      "deep": false
+    },
+    "timestamp": "2026-06-08T12:01:54.349653"
+  }
+]
