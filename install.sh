@@ -203,8 +203,10 @@ install_opencode() {
     echo -e "  ${INFO}Trying direct GitHub release..."
     OS=$(uname -s | tr '[:upper:]' '[:lower:]')
     ARCH=$(uname -m)
+    [ "$ARCH" = "x86_64" ] && ARCH="x64"
     [ "$ARCH" = "aarch64" ] && ARCH="arm64"
-    [ "$OS" = "darwin" ] && OS="mac"
+    [ "$ARCH" = "armv7l" ] && ARCH="arm"
+    [ "$OS" = "darwin" ] && OS="darwin"
     GZIP="opencode-${OS}-${ARCH}.tar.gz"
     URL="https://github.com/anomalyco/opencode/releases/latest/download/${GZIP}"
     mkdir -p /tmp/opencode-install
@@ -218,9 +220,21 @@ install_opencode() {
             return 0
         fi
     }
+    echo -e "  ${INFO}Trying .deb package..."
+    DEB="opencode-desktop-linux-amd64.deb"
+    DEB_URL="https://github.com/anomalyco/opencode/releases/latest/download/${DEB}"
+    curl -sSL "$DEB_URL" -o "/tmp/opencode-install/$DEB" 2>/dev/null && {
+        dpkg -i "/tmp/opencode-install/$DEB" 2>/dev/null && {
+            rm -rf /tmp/opencode-install
+            if command -v opencode &>/dev/null; then
+                echo -e "  ${OK} opencode installed from .deb"
+                return 0
+            fi
+        }
+    }
+    rm -rf /tmp/opencode-install
     echo -e "  ${YELLOW}⚠ opencode install failed. Install manually:${NC}"
     echo -e "     curl -sSL https://opencode.ai/install | bash"
-    return 1
 }
 
 if command -v opencode &>/dev/null; then
