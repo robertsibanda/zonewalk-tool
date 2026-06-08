@@ -162,46 +162,80 @@ if [ -f "$REPO_DIR/opencode-agent.jsonc" ]; then
     echo -e "  ${OK} Agent config template copied${NC}"
 fi
 
+# Copy instructions file
+if [ -f "$REPO_DIR/instructions/1grid-agent.md" ]; then
+    cp "$REPO_DIR/instructions/1grid-agent.md" /usr/local/share/1grid-agent/instructions.md
+    echo -e "  ${OK} Instructions file copied${NC}"
+fi
+
+# Install the 1grid-agent wrapper
+if [ -f "$REPO_DIR/scripts/1grid-agent.sh" ]; then
+    cp "$REPO_DIR/scripts/1grid-agent.sh" /usr/local/bin/1grid-agent
+    chmod +x /usr/local/bin/1grid-agent
+    echo -e "  ${OK} Installed ${WHITE}/usr/local/bin/1grid-agent${NC}"
+fi
+
 # ==========================================================
 # STEP 4: Install & configure opencode
 # ==========================================================
-echo -e "${GREEN}[4/6]${NC} Setting up opencode..."
+echo -e "${GREEN}[4/6]${NC} Installing opencode..."
 
 install_opencode() {
-    echo -e "  ${INFO}Installing opencode..."
+    echo -e "  ${INFO}Installing opencode via npm..."
     if command -v npm &>/dev/null; then
-        npm install -g @anthropic-ai/opencode 2>/dev/null && return 0
-        npm install -g opencode 2>/dev/null && return 0
+        npm install -g @anthropic-ai/opencode 2>&1 | tail -3 || true
+        if command -v opencode &>/dev/null; then
+            echo -e "  ${OK} opencode installed via npm"
+            return 0
+        fi
+        npm install -g opencode 2>&1 | tail -3 || true
+        if command -v opencode &>/dev/null; then
+            echo -e "  ${OK} opencode installed via npm (fallback)"
+            return 0
+        fi
     fi
-    curl -sSf https://opencode.ai/install.sh 2>/dev/null | bash >/dev/null 2>&1 && return 0
-    echo -e "  ${WARN}Automatic install failed — install opencode manually from https://opencode.ai"
+    echo -e "  ${INFO}Trying opencode.ai install script..."
+    curl -sS https://opencode.ai/install.sh 2>/dev/null | bash 2>&1 | tail -5 || true
+    if command -v opencode &>/dev/null; then
+        echo -e "  ${OK} opencode installed via script"
+        return 0
+    fi
+    echo -e "  ${YELLOW}⚠ opencode install failed. Install manually:${NC}"
+    echo -e "     curl -sS https://opencode.ai/install.sh | bash"
     return 1
 }
 
 if command -v opencode &>/dev/null; then
-    echo -e "  ${OK} opencode already installed: $(opencode --version 2>/dev/null || echo 'present')"
+    echo -e "  ${OK} opencode already installed: $(opencode --version 2>/dev/null | head -1)"
 else
     install_opencode
 fi
 
+# Configure opencode
 OPCODE_DIR="${HOME}/.config/opencode"
 OPCODE_CONFIG="${OPCODE_DIR}/opencode.jsonc"
-mkdir -p "$OPCODE_DIR"
+INSTRUCTIONS_DIR="${OPCODE_DIR}/instructions"
+mkdir -p "$OPCODE_DIR" "$INSTRUCTIONS_DIR"
 
-# Use the distributed agent config as opencode config
+# Install instructions file
+if [ -f "/usr/local/share/1grid-agent/instructions.md" ]; then
+    cp "/usr/local/share/1grid-agent/instructions.md" "$INSTRUCTIONS_DIR/1grid-agent.md"
+    echo -e "  ${OK} Instructions installed to ${WHITE}${INSTRUCTIONS_DIR}/1grid-agent.md${NC}"
+fi
+
+# Install opencode config
 if [ -f "$OPCODE_CONFIG" ]; then
-    echo -e "  ${INFO}Existing opencode config found — merging zonewalk + warehouse tools..."
-    # Simple merge: add tools section if not present
     if grep -q "warehouse-query" "$OPCODE_CONFIG" 2>/dev/null; then
-        echo -e "  ${OK} Warehouse tools already configured"
+        echo -e "  ${OK} Warehouse tools already configured in opencode"
     else
-        # Backup existing
         cp "$OPCODE_CONFIG" "$OPCODE_CONFIG.bak"
-        # Write the full agent config
         cp "/usr/local/share/1grid-agent/opencode-agent.jsonc" "$OPCODE_CONFIG"
         echo -e "  ${OK} Config updated (backup at ${OPCODE_CONFIG}.bak)"
     fi
 else
+    cp "/usr/local/share/1grid-agent/opencode-agent.jsonc" "$OPCODE_CONFIG"
+    echo -e "  ${OK} Created opencode config with zonewalk + warehouse tools"
+fi
     cp "/usr/local/share/1grid-agent/opencode-agent.jsonc" "$OPCODE_CONFIG"
     echo -e "  ${OK} Created opencode config with zonewalk + warehouse tools"
 fi
@@ -292,13 +326,15 @@ echo -e "    warehouse-my-convs    My conversations"
 echo -e "    warehouse-my-tickets  My tickets"
 echo ""
 echo -e "  ${WHITE}Usage:${NC}"
-echo -e "    zonewalk domain.co.za"
-echo -e "    warehouse-query search domain.co.za"
-echo -e "    warehouse-query my-convs --limit 10"
+echo -e "    1grid-agent              # Start opencode with warehouse integration"
+echo -e "    1grid-agent run \"check domain.co.za\"  # Run a single query"
+echo -e ""
+echo -e "    zonewalk domain.co.za     # Direct DNS diagnostics"
+echo -e "    warehouse-query search x  # Direct warehouse search"
 echo ""
-echo -e "  ${WHITE}Multi-user:${NC}"
-echo -e "    export USER_ID=alice    # set your identity"
-echo -e "    warehouse-query register-user --id alice --name Alice --team \"L1 Support\""
+echo -e "  ${WHITE}First run:${NC}"
+echo -e "    Just run ${CYAN}1grid-agent${NC} — it will ask for your name and set everything up."
+echo -e "    Your conversations and tickets will be saved to the warehouse automatically."
 echo ""
 echo -e "  ${CYAN}Portfolio:${NC} https://dev-robert.co.za"
 echo -e "  ${CYAN}Portal:${NC}    https://dev-robert.co.za/portal"

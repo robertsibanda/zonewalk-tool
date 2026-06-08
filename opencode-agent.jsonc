@@ -2,6 +2,11 @@
   "$schema": "https://opencode.ai/config.json",
   "name": "1-grid Agent",
   "description": "1-grid support agent with DNS diagnostics, ticket/conversation warehouse, and multi-user support",
+  "username": "1-grid Agent",
+
+  "instructions": [
+    "~/.config/opencode/instructions/1grid-agent.md"
+  ],
 
   "tools": {
     "zonewalk": {
