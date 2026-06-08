@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 # =========================================================
 # 1-GRID AGENT TOOLKIT INSTALLER
@@ -12,20 +11,21 @@ if echo "$SCRIPT_SRC" | grep -q "install.sh"; then
     REPO_DIR="$(cd "$(dirname "$0")" && pwd 2>/dev/null || echo "/tmp/1grid-agent")"
 else
     REPO_DIR="/tmp/1grid-agent-install"
-    mkdir -p "$REPO_DIR"
-    echo -e "\033[1;33mFetching latest 1-grid Agent Toolkit...\033[0m"
-    BASE="https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/master"
-    for f in zonewalk.sh version.txt scripts/warehouse-query.py opencode-agent.jsonc; do
-        mkdir -p "$(dirname "$REPO_DIR/$f")"
-        curl -sSfL "$BASE/$f" -o "$REPO_DIR/$f" 2>/dev/null || true
-    done
-    # Fetch warehouse data files
-    mkdir -p "$REPO_DIR/warehouse"
-    for f in tickets.json agent_conversations.json conversations.json zonewalk_results.json \
-             kb_articles.json issues.json quickrefs.json servers.json \
-             diagnostics.json dns_snapshots.json usage_log.json; do
-        curl -sSfL "$BASE/warehouse/$f" -o "$REPO_DIR/warehouse/$f" 2>/dev/null || true
-    done
+    rm -rf "$REPO_DIR"
+    echo -e "\033[1;33mDownloading 1-grid Agent Toolkit...\033[0m"
+    TARBALL="https://github.com/robertsibanda/zonewalk-tool/archive/master.tar.gz"
+    curl -sSL "$TARBALL" | tar xz -C /tmp 2>/dev/null || {
+        echo -e "\033[0;31mFailed to download from $TARBALL\033[0m"
+        echo -e "\033[1;33mTrying individual files as fallback...\033[0m"
+        mkdir -p "$REPO_DIR"
+        BASE="https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/master"
+        for f in zonewalk.sh version.txt scripts/warehouse-query.py opencode-agent.jsonc; do
+            mkdir -p "$(dirname "$REPO_DIR/$f")"
+            curl -sSfL "$BASE/$f" -o "$REPO_DIR/$f" || echo -e "  \033[0;31mFailed: $f\033[0m"
+        done
+    }
+    # If tarball worked, the dir is named zonewalk-tool-master
+    [ -d "/tmp/zonewalk-tool-master" ] && REPO_DIR="/tmp/zonewalk-tool-master"
 fi
 
 # --- Colors ---
@@ -129,9 +129,13 @@ python3 -c "import pymongo" 2>/dev/null || {
 # STEP 2: Install zonewalk script
 # ==========================================================
 echo -e "${GREEN}[2/6]${NC} Installing zonewalk..."
-cp "$REPO_DIR/zonewalk.sh" /usr/local/bin/zonewalk
-chmod +x /usr/local/bin/zonewalk
-echo -e "  ${OK} Installed to ${WHITE}/usr/local/bin/zonewalk${NC}"
+if [ -f "$REPO_DIR/zonewalk.sh" ]; then
+    cp "$REPO_DIR/zonewalk.sh" /usr/local/bin/zonewalk
+    chmod +x /usr/local/bin/zonewalk
+    echo -e "  ${OK} Installed to ${WHITE}/usr/local/bin/zonewalk${NC}"
+else
+    echo -e "  ${RED}zonewalk.sh not found — skipping${NC}"
+fi
 
 # ==========================================================
 # STEP 3: Install warehouse CLI
