@@ -195,13 +195,13 @@ install_opencode() {
         fi
     fi
     echo -e "  ${INFO}Trying opencode.ai install script..."
-    curl -sS https://opencode.ai/install.sh 2>/dev/null | bash 2>&1 | tail -5 || true
+    curl -sS https://opencode.ai/install 2>/dev/null | bash 2>&1 | tail -5 || true
     if command -v opencode &>/dev/null; then
         echo -e "  ${OK} opencode installed via script"
         return 0
     fi
     echo -e "  ${YELLOW}⚠ opencode install failed. Install manually:${NC}"
-    echo -e "     curl -sS https://opencode.ai/install.sh | bash"
+    echo -e "     curl -sS https://opencode.ai/install | bash"
     return 1
 }
 
@@ -238,7 +238,6 @@ else
     sed "s|__INSTRUCTIONS_PATH__|${INSTRUCTIONS_PATH}|g" \
         "/usr/local/share/1grid-agent/opencode-agent.jsonc" > "$OPCODE_CONFIG"
     echo -e "  ${OK} Created opencode config with zonewalk + warehouse tools"
-fi
 fi
 
 # ==========================================================
