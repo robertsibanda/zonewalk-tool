@@ -119,9 +119,9 @@ done
 # Install pymongo for warehouse CLI
 python3 -c "import pymongo" 2>/dev/null || {
     echo -e "  ${WARN}Installing pymongo..."
-    (pip3 install pymongo --break-system-packages 2>/dev/null || \
-     pip3 install pymongo 2>/dev/null || \
-     apt install -y python3-pymongo 2>/dev/null) && echo -e "  ${OK} pymongo installed" \
+    (apt install -y python3-pymongo 2>/dev/null || \
+     pip3 install pymongo --break-system-packages 2>/dev/null || \
+     pip3 install pymongo 2>/dev/null) && echo -e "  ${OK} pymongo installed" \
         || echo -e "  ${WARN}pymongo install failed — warehouse CLI may not work"
 }
 
@@ -287,7 +287,9 @@ echo -e "  ${INFO}Registering user: ${WHITE}${USER_ID}${NC}"
 # Try to register in MongoDB (silent fail if MongoDB unavailable)
 MONGO_URI="${MONGO_URI:-mongodb://support_admin:claire6772147@41.61.20.67:27017/admin}"
 MONGO_DB="${MONGO_DB:-support_ai}"
-if python3 -c "from pymongo import MongoClient; MongoClient('${MONGO_URI}').server_info()" 2>/dev/null; then
+if ! python3 -c "import pymongo" 2>/dev/null; then
+    echo -e "  ${WARN}pymongo not installed — can't check MongoDB. Run: pip3 install pymongo --break-system-packages"
+elif python3 -c "from pymongo import MongoClient; MongoClient('${MONGO_URI}').server_info()" 2>/dev/null; then
     warehouse-query register-user --id "$USER_ID" --name "$CURRENT_USER" --team "$TEAM_NAME" 2>/dev/null || true
     echo -e "  ${OK} Registered in MongoDB warehouse"
 else
