@@ -195,13 +195,31 @@ install_opencode() {
         fi
     fi
     echo -e "  ${INFO}Trying opencode.ai install script..."
-    curl -sS https://opencode.ai/install 2>/dev/null | bash 2>&1 | tail -5 || true
+    curl -sSL https://opencode.ai/install 2>/dev/null | bash 2>&1 | tail -5 || true
     if command -v opencode &>/dev/null; then
         echo -e "  ${OK} opencode installed via script"
         return 0
     fi
+    echo -e "  ${INFO}Trying direct GitHub release..."
+    OS=$(uname -s | tr '[:upper:]' '[:lower:]')
+    ARCH=$(uname -m)
+    [ "$ARCH" = "aarch64" ] && ARCH="arm64"
+    [ "$OS" = "darwin" ] && OS="mac"
+    GZIP="opencode-${OS}-${ARCH}.tar.gz"
+    URL="https://github.com/anomalyco/opencode/releases/latest/download/${GZIP}"
+    mkdir -p /tmp/opencode-install
+    curl -sSL "$URL" -o "/tmp/opencode-install/$GZIP" 2>/dev/null && {
+        tar xzf "/tmp/opencode-install/$GZIP" -C /tmp/opencode-install 2>/dev/null
+        cp /tmp/opencode-install/opencode /usr/local/bin/opencode 2>/dev/null
+        chmod +x /usr/local/bin/opencode 2>/dev/null
+        rm -rf /tmp/opencode-install
+        if command -v opencode &>/dev/null; then
+            echo -e "  ${OK} opencode installed from GitHub release"
+            return 0
+        fi
+    }
     echo -e "  ${YELLOW}⚠ opencode install failed. Install manually:${NC}"
-    echo -e "     curl -sS https://opencode.ai/install | bash"
+    echo -e "     curl -sSL https://opencode.ai/install | bash"
     return 1
 }
 
