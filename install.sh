@@ -14,10 +14,17 @@ else
     REPO_DIR="/tmp/1grid-agent-install"
     mkdir -p "$REPO_DIR"
     echo -e "\033[1;33mFetching latest 1-grid Agent Toolkit...\033[0m"
-    BASE="https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/main"
-    for f in zonewalk.sh version.txt scripts/warehouse-query.py opencode-agent.jsonc warehouse/*.json; do
+    BASE="https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/master"
+    for f in zonewalk.sh version.txt scripts/warehouse-query.py opencode-agent.jsonc; do
         mkdir -p "$(dirname "$REPO_DIR/$f")"
         curl -sSfL "$BASE/$f" -o "$REPO_DIR/$f" 2>/dev/null || true
+    done
+    # Fetch warehouse data files
+    mkdir -p "$REPO_DIR/warehouse"
+    for f in tickets.json agent_conversations.json conversations.json zonewalk_results.json \
+             kb_articles.json issues.json quickrefs.json servers.json \
+             diagnostics.json dns_snapshots.json usage_log.json; do
+        curl -sSfL "$BASE/warehouse/$f" -o "$REPO_DIR/warehouse/$f" 2>/dev/null || true
     done
 fi
 
@@ -112,7 +119,9 @@ done
 # Install pymongo for warehouse CLI
 python3 -c "import pymongo" 2>/dev/null || {
     echo -e "  ${WARN}Installing pymongo..."
-    pip3 install pymongo >/dev/null 2>&1 && echo -e "  ${OK} pymongo installed" \
+    (pip3 install pymongo --break-system-packages 2>/dev/null || \
+     pip3 install pymongo 2>/dev/null || \
+     apt install -y python3-pymongo 2>/dev/null) && echo -e "  ${OK} pymongo installed" \
         || echo -e "  ${WARN}pymongo install failed — warehouse CLI may not work"
 }
 
@@ -239,7 +248,7 @@ echo -e "${GREEN}[6/6]${NC} Finalizing..."
 # Update check script
 cat > /usr/local/bin/zonewalk-check-update << 'UEOF'
 #!/bin/bash
-REPO_URL="https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/main"
+REPO_URL="https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/master"
 LOCAL_VERSION=$(cat /usr/local/share/zonewalk/version.txt 2>/dev/null || echo "0")
 REMOTE_VERSION=$(curl -sS --max-time 5 "${REPO_URL}/version.txt" 2>/dev/null | head -1)
 if [ -n "$REMOTE_VERSION" ] && [ "$REMOTE_VERSION" != "$LOCAL_VERSION" ]; then

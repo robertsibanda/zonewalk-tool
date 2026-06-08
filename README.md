@@ -38,7 +38,7 @@ DNS & mail diagnostics + ticket/conversation warehouse with multi-user opencode 
 ## Quick Install
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/main/install.sh | sudo bash
+curl -sSL https://raw.githubusercontent.com/robertsibanda/zonewalk-tool/master/install.sh | sudo bash
 ```
 
 Or from a cloned repo:
